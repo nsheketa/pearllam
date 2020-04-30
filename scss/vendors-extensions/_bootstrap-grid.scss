@@ -1,0 +1,12 @@
+//overwrite of default bootstrap container sizes
+
+.container{
+  max-width: 1720px;
+  @include respond-to(md){
+    padding: 0 15px;
+  }
+  @include respond-to(lg){
+    padding: 0 60px;
+  }
+}
+

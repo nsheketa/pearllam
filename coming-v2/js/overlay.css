@@ -1,0 +1,9 @@
+#dots{  
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQIW2NkYGDwAeItjEACBHwAC6kBT/ddqFIAAAAASUVORK5CYII=) top left;
+    opacity:0.3;
+}

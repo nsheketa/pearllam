@@ -1,0 +1,28 @@
+@import 'abstracts/custom-variables';
+@import 'abstracts/mixins';
+
+@import 'vendors/normalize';
+@import 'vendors-extensions/bootstrap-grid';  //bootstrap container overwrite
+
+@import 'base/custom-reset';
+@import 'base/fonts';
+@import 'base/font-awesome';
+@import 'base/typography';
+@import 'base/animations';
+@import 'base/helpers';
+
+@import 'layout/general-layout-styles';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/homepage-compiled';
+
+@import 'components/img-fallback';
+@import 'components/lazy-load';
+//@import 'components/carousel';
+@import 'components/buttons';
+@import 'components/form';
+@import 'components/video-bg';
+
+@import 'components/about-page';
+
+

@@ -1,0 +1,39 @@
+/* Basic typography style for text
+  Mobile first method
+*/
+
+html {
+  // This defines what 1 rem is
+  font-size: 16px;
+}
+
+h1,
+.h1 {
+
+  @include respond-to(md) {
+  }
+}
+
+h2,
+.h2 {
+  @include respond-to(md) {
+  }
+}
+
+h3,
+.h3 {
+  @include respond-to(md) {
+  }
+}
+
+h4,
+.h4 {
+}
+
+p {
+  font-size: 1rem; // 16
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
