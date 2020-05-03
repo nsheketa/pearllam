@@ -1,0 +1,254 @@
+$fairs-detail-grey: #313131;
+$heading-mb: 70px;
+$section-mb: 140px;
+$gap-left: 70px;
+
+/*  HERO */
+
+.fairs-details__hero {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ededed;
+
+  @include respond-to(md) {
+    padding-bottom: 80px;
+  }
+}
+
+.fairs-detail__hero-media {
+  margin-bottom: 30px;
+  img {
+    width: 100%;
+  }
+  @include respond-to(md) {
+    margin-bottom: 60px;
+  }
+}
+
+.fairs-detail__hero-title {
+  margin-bottom: 20px;
+  h1 {
+    text-transform: uppercase;
+    color: $fairs-detail-grey;
+    font-size: 1.25rem; //20
+    font-weight: 100;
+    line-height: 1.2;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 0;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  @include respond-to(xl) {
+    h1 {
+      font-size: 3.125rem;
+    }
+  }
+}
+
+.fairs-detail__hero-info {
+  p {
+    font-size: 0.875rem; //14
+    position: relative;
+    font-weight: 300;
+    color: $fairs-detail-grey;
+    padding-left: 25px;
+    &.fairs-detail__hero-date {
+      font-size: 0.81rem; //13
+      color: $pink-color;
+      margin-bottom: 15px;
+      padding-left: 0;
+    }
+    svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      fill: $pink-color;
+      width: 19px;
+    }
+  }
+  @include respond-to(md) {
+    padding-left: $gap-left / 2;
+    p {
+      font-size: 0.94rem; //15
+      &.fairs-detail__hero-date {
+        font-size: 0.94rem; //15
+        margin-bottom: 30px;
+      }
+    }
+  }
+  @include respond-to(xl) {
+    padding-left: $gap-left;
+  }
+}
+
+.fairs-detail__hero-link {
+  margin-top: 35px;
+  a {
+    display: inline-block;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding: 22px 0 22px 25px;
+
+    @include on-event {
+      color: $pink-color;
+    }
+  }
+  @include respond-to(md) {
+    margin-top: 10px;
+
+    a {
+      padding: 30px 0 30px 25px;
+    }
+  }
+}
+
+/*****************************/
+
+/*****************************/
+/*  ABOUT */
+.fairs-detail__about {
+  padding-top: 60px;
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-top: 80px;
+    padding-bottom: $section-mb;
+  }
+}
+
+.fairs-detail__title {
+  margin-bottom: $heading-mb/2;
+  h2 {
+    font-size: 1.25rem; //20
+    line-height: 1.44;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: $heading-mb;
+    h2 {
+      font-size: 1.56rem; //25
+    }
+  }
+}
+
+.fd-about__featured-content {
+  margin-bottom: 50px;
+  p {
+    font-size: 1rem;
+    line-height: 1.44;
+    font-weight: 300;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 0;
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+}
+
+.fd-about__content {
+  p {
+    font-weight: 100;
+    line-height: 1.875;
+    margin-bottom: 40px;
+  }
+  @include respond-to(md) {
+    padding-left: $gap-left/2;
+  }
+  @include respond-to(xl) {
+    padding-left: $gap-left;
+  }
+}
+
+/*****************************/
+
+/*****************************/
+/*  SELECTED WORKS */
+
+.fairs-detail__selected {
+}
+
+/*****************************/
+
+/*****************************/
+/*  News */
+
+.fairs-details__news {
+  padding-bottom: $section-mb;
+}
+
+.fd-news__list {
+  max-width: 1170px;
+  @include center;
+}
+
+.fd-news__list-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  border-bottom: 1px solid #747474;
+  @include respond-to(md){
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+}
+
+.fd-news__list-date {
+  padding-right: 20px;
+  flex: 1 0 120px;
+  max-width: 120px;
+  p {
+    text-transform: uppercase;
+    font-size: 0.81rem; //13
+    color: $pink-color;
+    font-weight: 300;
+  }
+  @include respond-to(sm){
+    width: 190px;
+    max-width: 190px;
+    flex: 1 0 190px;
+  }
+  @include respond-to(md){
+    p{
+      font-size: 0.875rem; //14
+    }
+  }
+}
+
+.fs-news__list-content {
+  h4 {
+    font-size: 0.875rem; //14
+    text-transform: uppercase;
+    line-height: 1.33;
+    font-weight: 400;
+  }
+  p {
+    font-size: 0.94rem; //15
+    color: #747474;
+    line-height: 1.6;
+    font-weight: 300;
+    display: none;
+  }
+
+  @include respond-to(sm) {
+    h4 {
+      margin-bottom: 26px;
+    }
+    p {
+      display: block;
+    }
+  }
+  @include respond-to(md) {
+    h4 {
+      font-size: 1.125rem; //18
+    }
+  }
+}
+
+/*****************************/

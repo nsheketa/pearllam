@@ -425,3 +425,55 @@
   font-family: 'object-fit: cover;';
 }
 
+@mixin underline-hover($color){
+  position: relative;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+    background-color: $color;
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 0;
+    background: $color;
+    transition: width .35s ease;
+  }
+
+  @include on-event{
+    &:before{
+      width: 100%;
+      background: #333333;
+      transition: width .35s ease;
+    }
+    &:after{
+      width: 100%;
+      background: transparent;
+      transition: all 0s ease;
+    }
+  }
+}
+
+@mixin no-underline-on-hover($color){
+  &:before{
+    width: 100%;
+    background-color: $color;
+  }
+
+  @include on-event{
+    &:after{
+      width: 0;
+    }
+  }
+}

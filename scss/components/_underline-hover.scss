@@ -1,0 +1,60 @@
+/*
+Generated css file from old main.sass
+*/
+
+.underline-hover {
+  position: relative;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+    background-color: #333333;
+  }
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 0;
+    background: #333333;
+    transition: width .35s ease;
+  }
+
+  @include on-event{
+    &:before{
+      width: 100%;
+      background: #333333;
+      transition: width .35s ease;
+    }
+    &:after{
+      width: 100%;
+      background: transparent;
+      transition: all 0s ease;
+    }
+  }
+}
+
+.underline-hover-not-animation {
+  position: relative;
+  transition: background-color .5s;
+
+  @include on-event{}
+  &:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    bottom: 0px;
+    left: 0;
+    transition: background-color .5s;
+  }
+}

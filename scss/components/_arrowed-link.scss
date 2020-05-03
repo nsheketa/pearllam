@@ -1,0 +1,17 @@
+.arrowed-link{
+  position: relative;
+  padding-left: 25px;
+  &:before{
+    content: '';
+    display: block;
+    @include square(5px);
+    border-right: 1px solid $textColor;
+    border-bottom: 1px solid $textColor;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}

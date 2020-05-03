@@ -1,0 +1,234 @@
+.exhibitions {
+  padding-bottom: 50px;
+  @include respond-to(md) {
+    padding-bottom: 150px;
+  }
+}
+
+.exhibiitons__inner {
+  position: relative;
+  @include respond-to(md) {
+
+  }
+}
+
+.exhibitions-nav__wrap {
+  @include respond-to(lg) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.exhibitions-nav {
+  margin-bottom: 60px;
+  li {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &.is-active{
+      a{
+        @include no-underline-on-hover($pink-color);
+      }
+    }
+  }
+  a {
+    @include underline-hover(#333);
+    text-transform: uppercase;
+  }
+
+  @include respond-to(lg) {
+    max-width: 250px;
+    padding: 30px 15px 30px 0;
+    border: 1px solid #d4d4d4;
+    border-left: none;
+    border-right: none;
+    li {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+  }
+  @include respond-to(xl){
+    max-width: 330px;
+  }
+}
+
+.exhibitions-list {
+  padding: 0 15px;
+  @include respond-to(lg) {
+    padding: 0;
+    position: relative;
+    right: 0;
+    width: 80%;
+    margin-left: auto;
+    z-index: 2;
+  }
+  @include respond-to(lg) {
+    width: 70%;
+  }
+}
+
+.exhibitions-list__item {
+  position: relative;
+  margin-bottom: 40px;
+
+  @include on-event{
+    .exhibition-list__item-media{
+      img{
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+  @include respond-to(md) {
+    margin-bottom: 50px;
+
+    @include on-event{
+      .exhibition-list__item-top{
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.exhibitions-list__item-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include square(100%);
+  z-index: 2;
+}
+
+.exhibition-list__item-media {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    transition: 3.5s all ease;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 0;
+    &:after {
+      content: '';
+      display: block;
+      background-color: rgb(33, 33, 33);
+      opacity: 0.58;
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include square(100%);
+    }
+  }
+}
+
+.exhibition-list__item-inner {
+
+  @include respond-to(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include square(100%);
+    padding: 20px 20px 20px 20px;
+  }
+  @include respond-to(xl) {
+    padding: 50px 70px 50px 70px;
+  }
+  @include respond-min(1660){
+    padding-left: 120px;
+  }
+}
+
+.exhibition-list__item-top {
+  display: none;
+  @include respond-to(md) {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    text-align: right;
+    max-width: 470px;
+    padding-right: 33px;
+    padding-bottom: 33px;
+    border-right: 1px solid #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transform: translateX(30px);
+    transition: 1.5s all ease-in-out;
+
+    p {
+      color: #fff;
+      font-weight: 100;
+      line-height: 1.875;
+    }
+  }
+}
+
+.exhibition-list__item-bottom {
+  @include respond-to(md) {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.exhibition-list__item-title {
+
+  h3 {
+    font-size: 1.25rem; //20
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  @include respond-to(md) {
+    padding-right: 15px;
+    h3 {
+      color: #fff;
+      font-size: 1.875rem; //30
+      margin-bottom: 0;
+    }
+  }
+}
+
+.exhibition-list__item-details {
+  p {
+    line-height: 1.3;
+    font-size: 0.875rem; //14
+    &.duration {
+      color: $pink-color;
+      font-size: 0.81rem; //13
+      margin-bottom: 15px;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @include respond-to(md) {
+    margin-left: auto;
+    text-align: right;
+    padding-left: 15px;
+    p {
+      color: #fff;
+
+      &.duration {
+        color: #fff;
+        font-size: 0.93rem; //15
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

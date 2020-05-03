@@ -15,15 +15,17 @@ $baseFontSize: 16;
 $baseFontSizePixel: $baseFontSize * 1px;
 
 $baseLineHeight: 1.6;
-$baseLetterSpacing: 0;
+$baseLetterSpacing: 0.05em;
 
 /// Colors
 $textColor: #333 !default;
 $bodyBackground: #fff;
 
 $dark-color: #333333;
+$lightgrey-color: #7a7a7a;
 $lightdark-color: #848484;
 $lightpink-color: #cb97af;
+$pink-color: #db9db9;
 
 /// spacing gap
 

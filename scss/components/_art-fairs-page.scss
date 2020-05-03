@@ -1,0 +1,119 @@
+//art fairs page
+.fairs {
+  padding-bottom: 50px;
+  @include respond-to(md){
+    padding-bottom: 150px;
+  }
+}
+
+.fairs__row {
+  margin-bottom: 55px;
+  @include respond-to(md) {
+    margin-bottom: 80px;
+  }
+}
+
+.fairs-years {
+  display: flex;
+  margin-bottom: 50px;
+  @include respond-to(lg) {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.fairs-years__title {
+  text-transform: uppercase;
+  width: 33.33%;
+  max-width: 33.33%;
+  @include respond-to(lg) {
+    margin-bottom: 67px;
+    width: 100%;
+    max-width: 100%;
+  }
+  @include respond-to(xl) {
+  }
+}
+
+.fairs-years__list {
+  width: 66.66%;
+  max-width: 66.66%;
+  column-count: 2;
+  li {
+    display: block;
+    margin-bottom: 25px;
+    &.is-active {
+      a {
+        color: $pink-color;
+        @include no-underline-on-hover($pink-color);
+      }
+    }
+
+    a {
+      color: $lightgrey-color;
+      font-weight: 100;
+      @include underline-hover($lightgrey-color);
+    }
+  }
+
+  @include respond-to(lg) {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid $lightgrey-color;
+    column-count: 1;
+  }
+  @include respond-to(xl) {
+
+  }
+}
+
+.fairs-media {
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+  }
+  @include respond-to(md) {
+    margin-bottom: 0;
+  }
+  @include respond-to(xl) {
+    padding-left: 20px;
+  }
+}
+
+.fairs-content {
+  h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 0.875rem; //14
+    font-weight: 100;
+    color: $lightgrey-color;
+    line-height: 1.5;
+    &.fairs-content__date {
+      color: $pink-color;
+      margin-bottom: 10px;
+    }
+  }
+
+  @include respond-to(md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    h2 {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1rem;
+      &.fairs-content__date {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  @include respond-to(xl) {
+    padding-left: 45px;
+  }
+}

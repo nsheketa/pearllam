@@ -1,0 +1,137 @@
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: #8a8c8c;
+  z-index: 20000;
+  //font-family: "Montserrat", sans-serif;
+}
+
+.mobile-menu .topper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 78px;
+  padding: 0 10px;
+}
+
+.mobile-menu .topper.resize .toggle_mnu {
+  top: 44px;
+  height: 23px;
+  width: 35px;
+}
+
+.mobile-menu .topper .toggle_mnu {
+  width: 26px;
+  height: 20px;
+}
+
+.mobile-menu .topper .logo img {
+  display: block;
+}
+
+.mobile-menu .menu-list {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu .menu-list li {
+  margin-bottom: 23px;
+  &.is-active{
+    a{
+      color: #bcbdbd;
+    }
+  }
+}
+
+.mobile-menu .menu-list li:last-of-type {
+  margin-bottom: 40px;
+}
+
+.mobile-menu .menu-list li a {
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mobile-menu .lang-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mobile-menu .lang-menu li {
+  margin: 0 15px;
+}
+
+.mobile-menu .lang-menu li a {
+  color: #ffff;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.mobile-menu .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.mobile-menu .search-form input {
+  padding: 2px 0;
+  width: 180px;
+  border: none;
+  border-bottom: 1px #ababab solid;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #8a8c8c;
+  outline: none;
+}
+
+.mobile-menu .search-form input::-webkit-input-placeholder, .mobile-menu .search-form input::-moz-placeholder, .mobile-menu .search-form input:-moz-placeholder, .mobile-menu .search-form input:-ms-input-placeholder {
+  color: #ababab;
+}
+
+.mobile-menu .search-form input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  //font-family: "Montserrat", sans-serif;
+  font-family: $baseFontFamily;
+  color: #ababab;
+}
+
+.mobile-menu .search-form input[placeholder], .mobile-menu .search-form input::placeholder, .mobile-menu .search-form input::-webkit-input-placeholder, .mobile-menu .search-form input::-moz-placeholder, .mobile-menu .search-form input:-moz-placeholder, .mobile-menu .search-form input:-ms-input-placeholder {
+  color: #ababab;
+  //font-family: "Montserrat", sans-serif;
+  font-family: $baseFontFamily;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.mobile-menu .search-form .search-button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 17px;
+  height: 17px;
+  margin-left: 5px;
+}
+
+.mobile-menu .search-form .search-button svg path {
+  fill: #fff;
+}

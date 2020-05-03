@@ -13,16 +13,29 @@
 
 @import 'layout/general-layout-styles';
 @import 'layout/header';
+@import 'layout/mobile-menu';
+@import 'layout/search-menu';
 @import 'layout/footer';
 @import 'layout/homepage-compiled';
 
 @import 'components/img-fallback';
 @import 'components/lazy-load';
-//@import 'components/carousel';
+@import 'components/carousel';
 @import 'components/buttons';
 @import 'components/form';
 @import 'components/video-bg';
 
+@import 'components/underline-hover';
+@import 'components/arrowed-link';
+
+@import 'components/what-is-on';
 @import 'components/about-page';
+@import 'components/art-fairs-page';
+@import 'components/selected-works-section';
+@import 'components/art-fairs-detail-page';
+@import 'components/exhibitions-page';
+
+
+
 
 

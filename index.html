@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]>
-<html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>
-<html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>
-<html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en"> <!--<![endif]-->
-
+<html class="no-js" lang="en">
 <head>
-
     <meta charset="utf-8">
 
     <title>Pearl Lam Gallery</title>
     <meta name="description" content="">
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!--font Montserrat-->
+      <!--font Montserrat-->
     <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">-->
 
-    <link rel="stylesheet" href="libs/bootstrap4/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="libs/animate/animate.css">
-
-    <!--owl carousel style-->
-    <link rel="stylesheet" href="libs/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl-carousel/css/owl.theme.default.min.css">
-
-    <!--slick carousel style-->
-    <link rel="stylesheet" href="libs/slick-carousel/css/slick.css">
-    <link rel="stylesheet" href="libs/slick-carousel/css/slick-theme.css">
-
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
 
     <link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
     <script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="libs/modernizr/modernizr.js"></script>
 
 </head>
 
@@ -69,12 +51,12 @@
                 </div>
                 <div class="right-side">
                     <ul class="top-menu">
-                        <li><a href="#" class="hover-opacity-text underline-hover">Artists</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">Exhibitions</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">Art fairs</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">News & Press</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">about</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">Contact</a></li>
+                        <li><a href="artists.html" class="hover-opacity-text underline-hover">Artists</a></li>
+                        <li><a href="exhibitions.html" class="hover-opacity-text underline-hover">Exhibitions</a></li>
+                        <li><a href="art-fairs.html" class="hover-opacity-text underline-hover">Art fairs</a></li>
+                        <li><a href="news.html" class="hover-opacity-text underline-hover">News & Press</a></li>
+                        <li><a href="about.html" class="hover-opacity-text underline-hover">about</a></li>
+                        <li><a href="contact.html" class="hover-opacity-text underline-hover">Contact</a></li>
                         <li><a href="#" class="hover-opacity-text underline-hover">Online viewing room</a></li>
                     </ul>
                     <div class="lang-select">
@@ -122,12 +104,12 @@
         </a>
     </div>
     <ul class="menu-list">
-        <li><a href="#" class="hover-opacity-text">Artists</a></li>
-        <li><a href="#" class="hover-opacity-text">Exhibitions</a></li>
-        <li><a href="#" class="hover-opacity-text">Art fairs</a></li>
-        <li><a href="#" class="hover-opacity-text">News & Press</a></li>
-        <li><a href="#" class="hover-opacity-text">about</a></li>
-        <li><a href="#" class="hover-opacity-text">Contact</a></li>
+        <li><a href="artists.html" class="hover-opacity-text">Artists</a></li>
+        <li><a href="exhibitions.html" class="hover-opacity-text">Exhibitions</a></li>
+        <li><a href="art-fairs.html" class="hover-opacity-text">Art fairs</a></li>
+        <li><a href="news.html" class="hover-opacity-text">News & Press</a></li>
+        <li><a href="about.html" class="hover-opacity-text">about</a></li>
+        <li><a href="contact.html" class="hover-opacity-text">Contact</a></li>
         <li><a href="#" class="hover-opacity-text">Online viewing room</a></li>
     </ul>
     <ul class="lang-menu">
@@ -167,48 +149,47 @@
     </div>
 </div>
 
+<main>
+    <section class="main-carousel-wrapper">
 
-<section class="main-carousel-wrapper">
-
-    <div class="main-carousel-home">
-        <div class="item">
-            <div class="video-hero background-video-wrapper">
-                <video class="background-video play-video" autoplay muted playsinline loop="loop">
-                    <source src="video/home-video-01.mp4" type="video/mp4">
-                    <source src="video/home-video-01.webm" type="video/webm">
-                    <source src="video/home-video-01.ogv" type="video/ogg">
-                </video>
+        <div class="main-carousel-home">
+            <div class="item">
+                <div class="video-hero background-video-wrapper">
+                    <video class="background-video play-video" autoplay muted playsinline loop="loop">
+                        <source src="video/home-video-01.mp4" type="video/mp4">
+                        <source src="video/home-video-01.webm" type="video/webm">
+                        <source src="video/home-video-01.ogv" type="video/ogg">
+                    </video>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="scroll-down-wrapper">
-        <a href="#" class="scroll-down">
-            <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.66 490.66"><title>arrow-down</title>
-                <path d="M487.54,120.44a10.7,10.7,0,0,0-15.09,0L245.34,347.58,18.2,120.47A10.66,10.66,0,1,0,3.12,135.55L237.79,370.22a10.7,10.7,0,0,0,7.55,3.11,10.56,10.56,0,0,0,7.53-3.13L487.54,135.53A10.68,10.68,0,0,0,487.54,120.44Z"/>
-            </svg>
-        </a>
-        <div class="vertical-line">
-            <div class="line"></div>
+        <div class="scroll-down-wrapper">
+            <a href="#" class="scroll-down">
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.66 490.66"><title>arrow-down</title>
+                    <path d="M487.54,120.44a10.7,10.7,0,0,0-15.09,0L245.34,347.58,18.2,120.47A10.66,10.66,0,1,0,3.12,135.55L237.79,370.22a10.7,10.7,0,0,0,7.55,3.11,10.56,10.56,0,0,0,7.53-3.13L487.54,135.53A10.68,10.68,0,0,0,487.54,120.44Z"/>
+                </svg>
+            </a>
+            <div class="vertical-line">
+                <div class="line"></div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section class="what-is-on">
+        <div class="content fadeIn">
+            <h1>what’s on</h1>
+        </div>
 
-<section class="what-is-on">
-    <div class="content">
-        <h1 class="wow animated fadeIn delay-3s">what’s on</h1>
-    </div>
-
-    <div class="what-is-on-gallery">
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/Exhabition.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+        <div class="what-is-on-gallery fadeIn">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/Exhabition.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -217,30 +198,30 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/bg-2.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/bg-2.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -249,30 +230,30 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/Exhabition.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/Exhabition.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -281,30 +262,30 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/bg-2.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/bg-2.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -313,30 +294,30 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/Exhabition.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/Exhabition.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -345,30 +326,30 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="item-wrap-content">
-                <h3 class="place wow animated fadeIn delay-3s">Shanghai Current Exhibition</h3>
-                <p class="type wow animated fadeIn delay-3s">Exhibition</p>
-                <img class="wow animated fadeIn delay-3s" src="img/bg-2.jpg" alt="">
-                <div class="bottom-content">
-                    <div class="location-wrapper wow animated fadeIn delay-3s">
-						<span class="location wow animated fadeIn delay-3s">
+            <div class="item">
+                <div class="item-wrap-content">
+                    <h3 class="place">Shanghai Current Exhibition</h3>
+                    <p class="type">Exhibition</p>
+                    <img src="img/bg-2.jpg" alt="">
+                    <div class="bottom-content">
+                        <div class="location-wrapper">
+						<span class="location">
 							<span class="icon">
 								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 512 512"><title>placeholder</title><path
@@ -377,39 +358,35 @@
 							</span>
 							<span class="text">Pearl Lam Galleries, G/F, Shanghai, China 200002</span>
 						</span>
+                        </div>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <p class="context">There will be a talk at MGG London between Rineke Dijkstra and journalist
+                            Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
+                            Painting After All will consider Richter's six-decade-long preoccupation.</p>
+                        <a href="#" class="link hover-opacity-text">VIEW DETAIL</a>
                     </div>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <p class="context wow animated fadeIn delay-3s">There will be a talk at MGG London between Rineke Dijkstra and journalist
-                        Charlotte Jansen on 14 March 2020 at 3 pm. It will be followed by refreshments served at the gallery. Gerhard Richter:
-                        Painting After All will consider Richter's six-decade-long preoccupation.</p>
-                    <a href="#" class="link hover-opacity-text wow animated fadeIn delay-3s">VIEW DETAIL</a>
-                </div>
-                <div class="bottom-content-mobile">
-                    <h2 class="title-post wow animated fadeIn delay-3s">Noises in Silence : Zhu Xiao He</h2>
-                    <h4 class="subtitle wow animated fadeIn delay-3s">Until 11 JAN 2020</h4>
-                    <p class="location-event wow animated fadeIn delay-3s">Pearl Lam Galleries, G/F, Shanghai,
-                        China 200002</p>
+                    <div class="bottom-content-mobile">
+                        <h2 class="title-post">Noises in Silence : Zhu Xiao He</h2>
+                        <h4 class="subtitle">Until 11 JAN 2020</h4>
+                        <p class="location-event">Pearl Lam Galleries, G/F, Shanghai,
+                            China 200002</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--<div class="container">-->
-    <!--<button class="prev slick-arrow"> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>arrow left</title><path d="M177.1,260.9A7.07,7.07,0,0,1,175,256a6.51,6.51,0,0,1,2.1-4.9l146-146a7.24,7.24,0,0,0,0-10.2,7.24,7.24,0,0,0-10.2,0l-156,156a7.24,7.24,0,0,0,0,10.2l156,156a7.21,7.21,0,0,0,10.2-10.2Z"/><path d="M256,5C117.6,5,5,117.6,5,256S117.6,507,256,507,507,394.4,507,256,394.4,5,256,5Zm0,490.7C123.8,495.7,16.3,388.2,16.3,256S123.8,16.3,256,16.3,495.7,123.8,495.7,256,388.2,495.7,256,495.7Z"/></svg>  </button>-->
-    <!--<button class="next slick-arrow"> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>arrow-right</title><path d="M334.9,251.1A7.07,7.07,0,0,1,337,256a6.51,6.51,0,0,1-2.1,4.9l-146,146a7.24,7.24,0,0,0,0,10.2,7.24,7.24,0,0,0,10.2,0l156-156a7.24,7.24,0,0,0,0-10.2l-156-156a7.21,7.21,0,0,0-10.2,10.2Z"/><path d="M256,507c138.4,0,251-112.6,251-251S394.4,5,256,5,5,117.6,5,256,117.6,507,256,507Zm0-490.7c132.2,0,239.7,107.5,239.7,239.7S388.2,495.7,256,495.7,16.3,388.2,16.3,256,123.8,16.3,256,16.3Z"/></svg> </button>-->
-    <!--</div>-->
-
-</section>
+    </section>
+</main>
 
 <footer>
     <div class="container">
-        <div class="form-wrapper hide-mob inside-footer">
+        <div class="form-wrapper hide-mob inside-footer fadeIn">
             <form action="POST">
                 <div class="content-wrapper">
-                    <h3 class="wow animated fadeIn delay-3s">SIGN UP FOR OUR NEWSLETTER</h3>
-                    <p class="wow animated fadeIn delay-3s">Get early access to latest news and events.</p>
+                    <h3 class="fadeIn">SIGN UP FOR OUR NEWSLETTER</h3>
+                    <p class="fadeIn">Get early access to latest news and events.</p>
                 </div>
-                <div class="form-wrapper bottom wow animated fadeIn delay-3s">
+                <div class="form-wrapper bottom">
                     <input type="email" placeholder="Your email address">
                     <button type="send">
                         <span class="context">SUBSCRIBE</span>
@@ -423,22 +400,22 @@
         </div>
 
         <div class="footer-bottom-section">
-            <div class="item wow animated fadeIn delay-3s">
+            <div class="item fadeIn">
                 <a href="#" class="footer-logo">
                     <img src="img/logo_footer.png" alt="">
                 </a>
             </div>
-            <div class="item">
+            <div class="item fadeIn">
                 <ul class="footer-menu">
-                    <li><a href="#" class="underline-hover wow animated fadeIn delay-3s">Artists</a></li>
-                    <li><a href="#" class="underline-hover wow animated fadeIn delay-4s">Exhibitions</a></li>
-                    <li><a href="#" class="underline-hover wow animated fadeIn delay-5s">Art fairs</a></li>
-                    <li><a href="#" class="underline-hover wow animated fadeIn delay-6s">News Press</a></li>
-                    <li><a href="#" class="underline-hover wow animated fadeIn delay-7s">Contact</a></li>
+                    <li><a href="#" class="underline-hover">Artists</a></li>
+                    <li><a href="#" class="underline-hover">Exhibitions</a></li>
+                    <li><a href="#" class="underline-hover">Art fairs</a></li>
+                    <li><a href="#" class="underline-hover">News Press</a></li>
+                    <li><a href="#" class="underline-hover">Contact</a></li>
                 </ul>
             </div>
-            <div class="item">
-                <ul class="links-list wow animated fadeIn delay-3s">
+            <div class="item fadeIn">
+                <ul class="links-list">
                     <li>
                         <a href="#" class="hover-opacity-text">
                             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -511,14 +488,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="item hide-desk">
+            <div class="item hide-desk fadeIn">
                 <div class="form-wrapper inside-footer">
                     <form action="POST">
                         <div class="content-wrapper">
-                            <h3 class="wow animated fadeIn delay-3s">SIGN UP FOR OUR NEWSLETTER</h3>
-                            <p class="wow animated fadeIn delay-3s">Get early access to latest news and events.</p>
+                            <h3>SIGN UP FOR OUR NEWSLETTER</h3>
+                            <p>Get early access to latest news and events.</p>
                         </div>
-                        <div class="form-wrapper bottom wow animated fadeIn delay-3s">
+                        <div class="form-wrapper bottom">
                             <input type="email" placeholder="Your email address">
                             <button type="send">
                                 <span class="context">SUBSCRIBE</span>
@@ -532,7 +509,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright wow animated fadeIn delay-3s">
+        <div class="copyright fadeIn">
             <p class="for-mobile">© Pearllam 2020</p>
             <span class="copy-link-wrapper">
 				<a class="copy-link underline-hover" href="#">Privacy Policy</a>
@@ -541,26 +518,11 @@
     </div>
 </footer>
 
-<!--[if lt IE 9]>
-<script src="libs/html5shiv/es5-shim.min.js"></script>
-<script src="libs/html5shiv/html5shiv.min.js"></script>
-<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
 
-<script src="libs/jquery/jquery-3.5.0.min.js"></script>
-<script src="libs/ofi/ofi.min.js"></script>
-<script src="libs/waypoints/waypoints.min.js"></script>
-<script src="libs/wow/wow.min.js"></script>
-<script src="libs/animate/animate-css.js"></script>
-
-<script src="libs/owl-carousel/js/owl.carousel.min.js"></script>
-<script src="libs/scrollTo/scrollTo.min.js"></script>
-<script src="libs/slick-carousel/js/slick.min.js"></script>
-
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/libs.min.js"></script>
 
 <!--<script src='https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js'></script>-->
-
 
 <script src="js/common.min.js"></script>
 
