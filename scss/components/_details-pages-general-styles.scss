@@ -1,0 +1,54 @@
+.details-page__section-title {
+  margin-bottom: $heading-mb/2;
+  h2, h3 {
+    //font-size: 1.25rem; //20
+    //font-weight: 400;
+    line-height: 1.44;
+    text-transform: uppercase;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: $heading-mb;
+    h2 {
+      //font-size: 1.56rem; //25
+    }
+  }
+}
+
+.details-page__hero-content{
+  p{
+    position: relative;
+  }
+  @include respond-to(md){
+    p {
+      font-size: 0.94rem; //15
+    }
+  }
+}
+
+.details-page__hero-date{
+  font-size: 0.81rem; //13
+  //color: $pink-color;
+  color: $lightgrey-color;
+  margin-bottom: 15px;
+  padding-left: 0;
+
+  @include respond-to(md) {
+    font-size: 0.94rem; //15
+    margin-bottom: 30px;
+  }
+}
+
+.details-page__hero-location{
+  position: relative;
+  padding-left: 25px;
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    //fill: $pink-color;
+    fill: $lightgrey-color;
+    width: 19px;
+  }
+}
+

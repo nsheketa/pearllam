@@ -1,0 +1,31 @@
+.exhibition-detail__overview{
+  //padding-top: 0;
+
+  @include respond-to(md){
+    padding-top: 0;
+  }
+}
+
+.ed-overview__links{
+  //margin-top: 35px;
+
+  @include respond-to(md){
+    margin-top: 10px;
+  }
+}
+
+.ed-overview__link{
+  a{
+    display: inline-block;
+    padding: 15px 0 15px 25px;
+
+    @include on-event {
+      color: $pink-color;
+    }
+  }
+  @include respond-to(md){
+    a {
+      padding: 20px 0 20px 25px;
+    }
+  }
+}

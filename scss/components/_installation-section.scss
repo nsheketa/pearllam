@@ -1,0 +1,42 @@
+.installation{
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.installation__carousel-wrap{
+  position: relative;
+}
+
+.installation__carousel{
+  @include respond-to(md) {
+    margin: 0 -15px;
+  }
+  @include respond-to(xl) {
+    margin: 0 -27px;
+  }
+}
+
+.installation__item-inner{
+  @include respond-to(md) {
+    padding: 0 15px;
+  }
+  @include respond-to(xl) {
+    padding: 0 27px;
+  }
+}
+
+.installation__item-media{
+  margin-bottom: 24px;
+  img{
+    width: 100%;
+  }
+}
+
+.installation__item-content{
+  p{
+    text-transform: uppercase;
+  }
+}

@@ -152,6 +152,7 @@ Generated css file from old main.sass
 .wrapper-top-header .top-header.resize .right-side .top-menu li a {
   font-size: 14px;
   transition: font-size .5s;
+  //font-weight: normal;
 }
 
 .wrapper-top-header .top-header.resize .right-side .lang-select .text {
@@ -220,7 +221,7 @@ Generated css file from old main.sass
 
 .wrapper-top-header .top-header .right-side ul.top-menu li a {
   //font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  //font-weight: normal;
   //font-size: 18px;
   font-size: 14px;
   text-transform: uppercase;
@@ -243,7 +244,6 @@ Generated css file from old main.sass
   font-size: 14px;
   transition: font-size .5s;
   //font-weight: 400;
-  font-weight: 400;
   cursor: pointer;
 }
 

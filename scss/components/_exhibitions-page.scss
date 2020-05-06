@@ -28,6 +28,7 @@
 
 .exhibitions-nav {
   margin-bottom: 60px;
+  transition: 0;
   li {
     font-size: 14px;
     font-weight: normal;
@@ -62,7 +63,7 @@
 
 .exhibitions-nav{
   &.is-scrolling{
-    top: 77px !important;
+    //top: 77px !important;
     background-color: #fff;
     z-index: 20;
     padding: 15px 0 !important;
@@ -187,7 +188,7 @@
 
     p {
       color: #fff;
-      font-weight: 300;
+      //font-weight: 300;
       line-height: 1.875;
     }
   }

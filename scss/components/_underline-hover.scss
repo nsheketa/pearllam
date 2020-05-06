@@ -14,7 +14,7 @@ Generated css file from old main.sass
     height: 1px;
     width: 0;
     transition: width 0s ease, background .35s ease;
-    background-color: #333333;
+    background-color: $textColor;
   }
   &:after{
     content: '';
@@ -24,14 +24,14 @@ Generated css file from old main.sass
     bottom: -2px;
     height: 1px;
     width: 0;
-    background: #333333;
+    background: $textColor;
     transition: width .35s ease;
   }
 
   @include on-event{
     &:before{
       width: 100%;
-      background: #333333;
+      background: $textColor;
       transition: width .35s ease;
     }
     &:after{

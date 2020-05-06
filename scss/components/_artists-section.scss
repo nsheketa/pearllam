@@ -1,0 +1,33 @@
+.artists-section {
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.artists-list {
+  margin: 0 -15px;
+  column-count: 2;
+  @include respond-to(md) {
+    column-count: 3;
+  }
+  @include respond-to(xl) {
+    column-count: 4;
+  }
+}
+
+.artist-list__item {
+  padding: 0 15px;
+  margin-bottom: 50px;
+
+  a {
+    position: relative;
+    text-transform: uppercase;
+    @include underline-hover($textColor);
+  }
+
+  @include respond-to(xl) {
+    margin-bottom: 80px;
+  }
+}

@@ -25,10 +25,14 @@
   text-align: center;
   padding-bottom: 50px;
   background-color: #fff;
-  @include transition-03;
+  transition: 0s;
+  z-index: 20;
+  //width: calc(100% + 30px) !important;
+  //padding: 0 15px 50px;
+  //left: -15px !important;
   &.is-scrolling {
     position: fixed;
-    top: 77px !important;
+    //top: 77px !important;
     left: 0 !important;
     right: 0 !important;
     margin: auto;
@@ -46,8 +50,10 @@
 
   @include respond-to(lg) {
     display: block;
-    padding-bottom: 0;
+    padding: 0;
+    //padding-bottom: 0;
     background-color: transparent;
+    max-width: 70px;
     &.is-scrolling {
       left: auto !important;
       right: auto !important;
@@ -55,7 +61,6 @@
       z-index: 20;
       padding: 10px 0 !important;
       width: calc(8.33% - 15px);
-      max-width: 70px;
     }
   }
 }
@@ -66,6 +71,7 @@
   @include transition-03;
   h4{
     //font-weight: normal;
+    font-size: 15px;
   }
   @include respond-to(lg) {
     margin-bottom: 10px;
@@ -148,9 +154,9 @@
 
   a {
     color: $lightgrey-color;
-    font-weight: normal;
+    //font-weight: normal;
     @include underline-hover($lightgrey-color);
-    font-size: 14px;
+    font-size: 13px;
   }
   @include respond-to(lg) {
     opacity: 1 !important;
@@ -228,7 +234,7 @@
     p {
       //font-size: 1rem;
       &.fairs-content__date {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
       }
     }
   }

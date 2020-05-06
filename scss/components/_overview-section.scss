@@ -1,0 +1,41 @@
+.overview-section {
+  padding-top: 60px;
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-top: 80px;
+    padding-bottom: $section-mb;
+  }
+}
+
+
+.overview-section__featured-content {
+  margin-bottom: 50px;
+  p {
+    font-size: 1rem;
+    line-height: 1.44;
+    //font-weight: 300;
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 0;
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+}
+
+.overview-section__content {
+  p {
+    //font-weight: 300;
+    line-height: 1.875;
+    margin-bottom: 40px;
+  }
+  @include respond-to(md) {
+    padding-left: $gap-left/2;
+  }
+  @include respond-to(xl) {
+    padding-left: $gap-left;
+  }
+}

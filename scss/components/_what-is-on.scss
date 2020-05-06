@@ -12,7 +12,7 @@ section.what-is-on .content h1 {
   text-align: center;
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  font-weight: 300;
+  //font-weight: 300;
   //font-size: 42px;
   line-height: 48px;
   text-transform: uppercase;
@@ -123,12 +123,12 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrappe
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrapper .location .text {
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  font-weight: normal;
+  //font-weight: normal;
   font-size: 16px;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .subtitle {
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 16px;
   line-height: 16px;
   color: #cb97af;
@@ -136,7 +136,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .subtitle {
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location {
-  font-weight: normal;
+  //font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   color: $textColor;
@@ -166,14 +166,14 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content p.context {
-  font-weight: normal;
+  //font-weight: normal;
   //font-size: 16px;
   margin-bottom: 65px;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
   position: relative;
-  font-weight: normal;
+  //font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
   border-bottom: 1px solid $textColor;
@@ -222,7 +222,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-event {
-  font-weight: 400;
+  //font-weight: 400;
   font-size: 16px;
   color: $textColor;
 }
@@ -274,7 +274,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content {
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .place {
-  font-weight: 400;
+  //font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #848484;
@@ -284,7 +284,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .place 
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .type {
   position: relative;
-  font-weight: 300;
+  //font-weight: 300;
   color: #cb97af;
   font-size: 17px;
   line-height: 19px;
@@ -343,7 +343,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .locati
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .subtitle {
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 16px;
   line-height: 16px;
   color: #cb97af;
@@ -351,7 +351,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .subtit
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .title-post {
-  font-weight: 200;
+  //font-weight: 200;
   position: relative;
   font-size: 45px;
   line-height: 50px;
@@ -369,14 +369,14 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .title-
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content p.context {
-  font-weight: 400;
+  //font-weight: 400;
   font-size: 18px;
   margin-bottom: 65px;
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content a.link {
   position: relative;
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 14px;
   text-transform: uppercase;
   border-bottom: 1px solid #cb97af;
@@ -426,7 +426,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content a.link:
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .location-event {
-  font-weight: 400;
+  //font-weight: 400;
   font-size: 16px;
   color: $textColor;
 }

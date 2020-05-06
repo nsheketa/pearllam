@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>About</title>
+    <title>Exhibition Detail</title>
     <meta name="description" content="">
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -52,10 +52,10 @@
                     <ul class="top-menu">
                         <li><a href="#" class="hover-opacity-text underline-hover">Viewing room</a></li>
                         <li><a href="artists.html" class="hover-opacity-text underline-hover">Artists</a></li>
-                        <li><a href="exhibitions.html" class="hover-opacity-text underline-hover">Exhibitions</a></li>
+                        <li class="is-active"><a href="exhibitions.html" class="hover-opacity-text underline-hover">Exhibitions</a></li>
                         <li><a href="art-fairs.html" class="hover-opacity-text underline-hover">Art fairs</a></li>
                         <li><a href="news.html" class="hover-opacity-text underline-hover">News & Press</a></li>
-                        <li class="is-active"><a href="about.html" class="hover-opacity-text underline-hover">about</a></li>
+                        <li><a href="about.html" class="hover-opacity-text underline-hover">about</a></li>
                         <li><a href="contact.html" class="hover-opacity-text underline-hover">Contact</a></li>
                     </ul>
                     <div class="lang-select">
@@ -105,10 +105,10 @@
     <ul class="menu-list">
         <li><a href="#" class="hover-opacity-text">Viewing room</a></li>
         <li><a href="artists.html" class="hover-opacity-text">Artists</a></li>
-        <li><a href="exhibitions.html" class="hover-opacity-text">Exhibitions</a></li>
+        <li class="is-active"><a href="exhibitions.html" class="hover-opacity-text">Exhibitions</a></li>
         <li><a href="art-fairs.html" class="hover-opacity-text">Art fairs</a></li>
         <li><a href="news.html" class="hover-opacity-text">News & Press</a></li>
-        <li class="is-active"><a href="about.html" class="hover-opacity-text">about</a></li>
+        <li><a href="about.html" class="hover-opacity-text">about</a></li>
         <li><a href="contact.html" class="hover-opacity-text">Contact</a></li>
     </ul>
     <ul class="lang-menu">
@@ -149,88 +149,264 @@
 </div>
 
 <main>
-    <section class="about-hero first-section fadeInInterval">
+    <div class="first-section exhibition-detail__hero">
         <div class="container">
-            <div class="about-hero__media">
-                <img src="img/about/hero.png">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="ed-hero__content details-page__hero-content fadeInInterval">
+                        <p class="details-page__hero-date">FEB 14 - 16, 2020</p>
+                        <h1>ZHU XIAO HE: NOISES IN SILENCE</h1>
+                        <p class="details-page__hero-location">
+                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M257,252.29a75.91,75.91,0,1,1,53.69-22.21A75.72,75.72,0,0,1,257,252.29Zm0-121.79a45.89,45.89,0,1,0,32.46,13.43A45.76,45.76,0,0,0,257,130.5Z"></path>
+                                <path d="M257.14,512l-11.61-13.64C238.73,490.37,79,301.31,79,178,79,79.84,158.84,0,257,0s178,79.84,178,178c0,117.27-159.6,312-166.39,320.21ZM257,30C175.4,30,109,96.4,109,178c0,45.84,27.33,112.19,79.05,191.86,26.84,41.35,53.87,76.37,68.71,94.9,14.88-19,42.16-55.21,69.17-97.34C377.61,286.84,404.9,221.33,404.9,178,404.9,96.4,338.54,30,257,30Z"></path>
+                            </svg>
+                            West Bund Art Centre, Shanghai, China
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="ed-hero__carousel-wrap">
+                        <div class="ed-hero__carousel slick__slider">
+                            <div class="ed-hero__carousel-item">
+                                <div class="ed-hero__item-inner">
+                                    <div class="ed-hero__item-media">
+                                        <img src="img/exhibition-detail/hero.png" alt="">
+                                    </div>
+                                    <div class="ed-hero__item-content">
+                                        <p>Pearl Lam Galleries will present works by a range of international contemporary artists, including Chinese
+                                            artists Su Xiaobai and Zhu Jinshi; </p>
+                                        <div class="ed-hero__item-count">
+                                            <span class="current"></span>
+                                            <span> / </span>
+                                            <span class="total"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ed-hero__carousel-item">
+                                <div class="ed-hero__item-inner">
+                                    <div class="ed-hero__item-media">
+                                        <img src="img/exhibition-detail/hero.png" alt="">
+                                    </div>
+                                    <div class="ed-hero__item-content">
+                                        <p>Pearl Lam Galleries will present works by a range of international contemporary artists, including Chinese
+                                            artists Su Xiaobai and Zhu Jinshi; </p>
+                                        <div class="ed-hero__item-count">
+                                            <span class="current"></span>
+                                            <span> / </span>
+                                            <span class="total"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick__slider-nav ed-hero__carousel-nav">
+                            <button class="slick__slider-btn slick__slider-btn--prev">
+                                <span></span>
+                            </button>
+                            <button class="slick__slider-btn slick__slider-btn--next">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="exhibition-detail__overview overview-section fadeInInterval">
+        <div class="container">
+            <div class="details-page__section-title">
+                <h3 class="title-with-line">Overview</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ed-overview__links">
+                        <div class="ed-overview__link">
+                            <a href="#" class="arrowed-link">Download press release</a>
+                        </div>
+                        <div class="ed-overview__link">
+                            <a href="#" class="arrowed-link">Download list of works</a>
+                        </div>
+                        <div class="ed-overview__link">
+                            <a href="#" class="arrowed-link">View E-Catalogues</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="overview-section__content">
+                        <p>
+                            Shanghai—Pearl Lam Galleries is excited to announce its return to the sixth edition of West Bund Art & Design, one of the
+                            largest-scale world-class art and design fairs in China. Once again, international audiences will turn their focus to the
+                            Shanghai waterfront during the second week of November. As one of Asia’s leading galleries with two spaces in Hong Kong
+                            and one in Shanghai, Pearl Lam Galleries will present works by a range of international contemporary artists, including
+                            Chinese artists Su Xiaobai and Zhu Jinshi;
+                        </p>
+                        <p>
+                            Pearl Lam Galleries will present works by a range of international contemporary artists, including Chinese artists Su
+                            Xiaobai and Zhu Jinshi; Korean artists Chun Kwang Young, Kim Tae-Ho, Hoon Kwak, and Lee Ufan; British artist Peter Peri;
+                            Indonesian artist Gatot Pujiarto; and Japanese artist Yoshitomo Nara.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="about">
+
+    <section class="exhibition-detail__selected selected-works fadeInInterval">
         <div class="container">
-            <!--featured, text right image left-->
-            <div class="row about-row about-row--featured about-row--text-right">
-                <div class="col-lg-6">
-                    <div class="about-image__wrap about-animated">
-                        <img src="img/about/01.png" alt="">
+            <div class="details-page__section-title fadeInInterval">
+                <h3 class="title-with-line">Selected works</h3>
+            </div>
+            <div class="selected-works__carousel-wrap fadeInInterval">
+                <div class="selected-works__carousel slick__slider">
+                    <div class="selected-works__carousel-item">
+                        <div class="selected-works__item-inner">
+                            <div class="selected-works__item-media">
+                                <img src="img/art-fairs-detail/01.png" alt="">
+                            </div>
+                            <div class="selected-works__item-desc">
+                                <p>130 x 110 cm (51 1/8 x 43 1/4 in</p>
+                            </div>
+                            <div class="selected-works__item-title">
+                                <h4>CHUN KWANG YOUNG b.1944, Aggregation 15-NV070, 2015</h4>
+                            </div>
+                            <div class="selected-works__item-content">
+                                <p>Raw Intent No. 3, 2016 <br>
+                                    Oil on French linen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected-works__carousel-item">
+                        <div class="selected-works__item-inner">
+                            <div class="selected-works__item-media">
+                                <img src="img/art-fairs-detail/02.png" alt="">
+                            </div>
+                            <div class="selected-works__item-desc">
+                                <p>180 x 160 cm</p>
+                            </div>
+                            <div class="selected-works__item-title">
+                                <h4>ZHU JINSHI b. 1954, Non–Calligraphy, 2016</h4>
+                            </div>
+                            <div class="selected-works__item-content">
+                                <p>Oil on canvas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected-works__carousel-item">
+                        <div class="selected-works__item-inner">
+                            <div class="selected-works__item-media">
+                                <img src="img/art-fairs-detail/03.png" alt="">
+                            </div>
+                            <div class="selected-works__item-desc">
+                                <p>130 x 110 cm (51 1/8 x 43 1/4 in</p>
+                            </div>
+                            <div class="selected-works__item-title">
+                                <h4>CHUN KWANG YOUNG b.1944, Aggregation 15-NV070, 2015</h4>
+                            </div>
+                            <div class="selected-works__item-content">
+                                <p>Raw Intent No. 3, 2016 <br>
+                                    Oil on French linen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected-works__carousel-item">
+                        <div class="selected-works__item-inner">
+                            <div class="selected-works__item-media">
+                                <img src="img/art-fairs-detail/01.png" alt="">
+                            </div>
+                            <div class="selected-works__item-desc">
+                                <p>130 x 110 cm (51 1/8 x 43 1/4 in</p>
+                            </div>
+                            <div class="selected-works__item-title">
+                                <h4>CHUN KWANG YOUNG b.1944, Aggregation 15-NV070, 2015</h4>
+                            </div>
+                            <div class="selected-works__item-content">
+                                <p>Raw Intent No. 3, 2016 <br>
+                                    Oil on French linen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selected-works__carousel-item">
+                        <div class="selected-works__item-inner">
+                            <div class="selected-works__item-media">
+                                <img src="img/art-fairs-detail/02.png" alt="">
+                            </div>
+                            <div class="selected-works__item-desc">
+                                <p>180 x 160 cm</p>
+                            </div>
+                            <div class="selected-works__item-title">
+                                <h4>ZHU JINSHI b. 1954, Non–Calligraphy, 2016</h4>
+                            </div>
+                            <div class="selected-works__item-content">
+                                <p>Oil on canvas</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about-content__wrap about-animated">
-                        <p class="featured">Pearl Lam Galleries is a driving force within Asia’s contemporary art scene. Founded in 2005, the
-                            Gallery plays a vital role in stimulating international dialogue and cross-cultural exchange between East and West.</p>
-                    </div>
+                <div class="slick__slider-nav selected-works__nav">
+                    <button class="slick__slider-btn slick__slider-btn--prev">
+                        <span></span>
+                    </button>
+                    <button class="slick__slider-btn slick__slider-btn--next">
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <!--featured, text right image left-->
+        </div>
+    </section>
 
-            <!--text left image right-->
-            <div class="row about-row about-row--text-left">
-                <div class="col-lg-7 col-xl-8 order-1">
-                    <div class="about-image__wrap about-animated">
-                        <img src="img/about/02.png" alt="">
+    <section class="artists-section">
+        <div class="container">
+            <div class="details-section__title">
+                <h3 class="title-with-line">Artists</h3>
+            </div>
+            <div class="artists-list artists-list--list-view">
+                <div class="row">
+                    <div class="col-xs-2 col-md-3">
+                       <div class="artist-list__item">
+                           <p><a href="#">Enrico Marone Cinzano</a></p>
+                       </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Gatot Pujiarto</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Golnaz Fathi</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5 col-xl-4 order-0">
-                    <div class="about-content__wrap about-animated">
-                        <p>Following a rigorous programme, Pearl Lam Galleries presents museum-quality exhibitions that
-                            re-evaluate and challenge perceptions of cultural practice in Asia. With a thoughtfully balanced
-                            roster of Chinese and international artists, the Gallery is strategic in its curation, positioning itself as an educator.
-                        </p>
-                        <p>
-                            The Gallery maintains two spaces in Hong Kong: one in the historic Pedder Building and another in the recently erected H
-                            Queen’s. The Shanghai space is situated in the heart of the Bund district.
-                        </p>
+                    <div class="col-xs-2 col-md-3">
+                        <div class="artist-list__item">
+                            <p><a href="#">Li Tianbing</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Pang Tao</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Pascale Marthine Tayou</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-md-3">
+                        <div class="artist-list__item">
+                            <p><a href="#">Enrico Marone Cinzano</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Gatot Pujiarto</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Golnaz Fathi</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 col-md-3">
+                        <div class="artist-list__item">
+                            <p><a href="#">Sinta Tantra</a></p>
+                        </div>
+                        <div class="artist-list__item">
+                            <p><a href="#">Su Dongping</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--text left image right-->
-
-            <!--text right image left-->
-            <div class="row about-row about-row--text-right">
-                <div class="col-lg-7 col-xl-8">
-                    <div class="about-image__wrap about-animated">
-                        <img src="img/about/03.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-xl-4">
-                    <div class="about-content__wrap about-animated">
-                        <p>With a team of international staff, Pearl Lam Galleries’ reach is global, having presentations at
-                            major international art fairs including The Armory Show, Art Cologne, Art Basel Hong Kong, Frieze Masters, and West Bund Art
-                            and Design.</p>
-                    </div>
-                </div>
-            </div>
-            <!--text right image left-->
-
-            <!--text left image right-->
-            <div class="row about-row about-row--text-left">
-                <div class="col-lg-7 col-xl-8 order-1">
-                    <div class="about-image__wrap about-animated">
-                        <img src="img/about/04.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-xl-4 order-0">
-                    <div class="about-content__wrap about-animated">
-                        <p>With over 20 years of experience in the industry, Pearl Lam is a leading authority on the Asian
-                            contemporary art market. She has been advising Chinese collectors on the intricacies of the
-                            international art market since 1993. Since then, her reach has expanded beyond Asia and now
-                            informs a far more global audience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--text left image right-->
         </div>
     </section>
 </main>
@@ -382,7 +558,7 @@
 
 <!--<script src='https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js'></script>-->
 
-<script src="js/common.min.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>

@@ -72,7 +72,7 @@ footer .footer-bottom-section .footer-menu li {
 
 footer .footer-bottom-section .footer-menu li a {
   font-size: 14px;
-  font-weight: 300;
+  //font-weight: 300;
   color: #fff;
 }
 
@@ -96,13 +96,13 @@ footer .content-wrapper h3 {
   //font-size: 18px;
   font-size: 25px;
   line-height: 18px;
-  font-weight: 300;
+  //font-weight: 300;
   margin-bottom: 10px;
 }
 
 footer .content-wrapper p {
   font-size: 15px;
-  font-weight: 300;
+  //font-weight: 300;
 }
 
 footer .form-wrapper {
@@ -132,7 +132,7 @@ footer .form-wrapper input {
   border-bottom: 1px #ababab solid;
   color: #ababab;
   font-size: 15px;
-  font-weight: 300;
+  //font-weight: 300;
   background-color: #878787;
   outline: none;
 }
@@ -143,7 +143,7 @@ footer .form-wrapper input::-webkit-input-placeholder, footer .form-wrapper inpu
 
 footer .form-wrapper input::placeholder {
   font-size: 15px;
-  font-weight: 300;
+  //font-weight: 300;
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
   color: #ababab;
@@ -153,7 +153,7 @@ footer .form-wrapper input[placeholder], footer .form-wrapper input::placeholder
   color: #ababab;
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  font-weight: 300;
+  //font-weight: 300;
   font-size: 13px;
 }
 
@@ -164,7 +164,7 @@ footer .form-wrapper button {
   //font-size: 15px;
   font-size: 13px;
   text-align: center;
-  font-weight: 300;
+  //font-weight: 300;
   background: none;
   outline: none;
   cursor: pointer;
@@ -199,7 +199,7 @@ footer .copyright {
   flex-direction: row;
   font-size: 15px;
   line-height: 16px;
-  font-weight: 300;
+  //font-weight: 300;
   color: #adadad;
   margin-top: 25px;
 }
