@@ -13,8 +13,8 @@ section.what-is-on .content h1 {
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
   font-weight: 300;
-  font-size: 50px;
-  line-height: 55px;
+  //font-size: 42px;
+  line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 80px;
 }
@@ -53,7 +53,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content {
   padding: 0 15px;
   @include respond-to(md){
     opacity: .5;
-    padding: 0 65px;
+    padding: 0 35px;
   }
 }
 
@@ -68,21 +68,23 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .place {
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .type {
   position: relative;
-  font-weight: 300;
-  color: #cb97af;
+  font-weight: bold;
+  //color: #cb97af;
+  color: $textColor;
   font-size: 17px;
   line-height: 19px;
-  margin-left: 40px;
+  //margin-left: 40px;
   margin-bottom: 40px;
-  &:before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #cb97af;
-    left: -40px;
-    top: 8px;
-  }
+  text-transform: uppercase;
+  //&:before{
+  //  content: '';
+  //  position: absolute;
+  //  width: 30px;
+  //  height: 2px;
+  //  background-color: #cb97af;
+  //  left: -40px;
+  //  top: 8px;
+  //}
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content img {
@@ -121,7 +123,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrappe
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrapper .location .text {
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -130,38 +132,51 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .subtitle {
   font-size: 16px;
   line-height: 16px;
   color: #cb97af;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+}
+
+section.what-is-on .what-is-on-gallery .item .item-wrap-content .location {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: $textColor;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+
+  @include respond-to(md){
+    margin-bottom: 24px;
+  }
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
-  font-weight: 200;
-  position: relative;
-  font-size: 45px;
+   position: relative;
+  //font-size: 45px;
   line-height: 50px;
   margin-bottom: 55px;
   &:after{
     content: '';
     position: absolute;
-    width: 60px;
-    height: 2px;
-    background-color: #cb97af;
+    width: 100%;
+    height: 1px;
+    //background-color: #cb97af;
+    background-color: $textColor;
     left: 0;
     bottom: -17px;
   }
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content p.context {
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: normal;
+  //font-size: 16px;
   margin-bottom: 65px;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
   position: relative;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 14px;
   text-transform: uppercase;
-  border-bottom: 1px solid #cb97af;
+  border-bottom: 1px solid $textColor;
   padding-bottom: 1px;
   transition: border-bottom 1s ease;
   &:before{
@@ -173,7 +188,8 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
     height: 1px;
     width: 0;
     transition: width 0s ease, background .5s ease;
-    background-color: #cb97af;
+    //background-color: #cb97af;
+    background-color: $textColor;
   }
   &:after{
     content: '';
@@ -183,16 +199,18 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
     bottom: -1px;
     height: 1px;
     width: 0;
-    background: #cb97af;
+    //background: #cb97af;
+    background: $textColor;
     transition: width .35s ease;
   }
 
   @include on-event{
     border-bottom: 1px solid transparent;
     transition: border-bottom .5s ease;
+    opacity: 1;
     &:before{
       width: 100%;
-      background: #333333;
+      background: $textColor;
       transition: width .5s ease;
     }
     &:after{
@@ -206,7 +224,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-event {
   font-weight: 400;
   font-size: 16px;
-  color: #333333;
+  color: $textColor;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .bottom-content-mobile {
@@ -397,7 +415,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content a.link:
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content a.link:hover::before {
   width: 100%;
-  background: #333333;
+  background: $textColor;
   transition: width .5s ease;
 }
 
@@ -410,7 +428,7 @@ section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content a.link:
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .location-event {
   font-weight: 400;
   font-size: 16px;
-  color: #333333;
+  color: $textColor;
 }
 
 section.what-is-on .what-is-on-gallery-carousel .item .item-wrap-content .bottom-content-mobile {

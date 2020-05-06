@@ -111,7 +111,7 @@ $gap-left: 70px;
   p{
     color: $fairs-detail-grey;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.1em;
     white-space: nowrap;
   }
@@ -127,22 +127,22 @@ $gap-left: 70px;
 .selected-works__item-title {
   padding-bottom: 15px;
   h4 {
-    font-size: 1rem;
+    //font-size: 1rem;
     line-height: 1.2;
   }
   @include respond-to(md) {
     padding-bottom: 40px;
     h4 {
-      font-size: 1.125rem; //18
+      //font-size: 1.125rem; //18
     }
   }
 }
 
 .selected-works__item-content {
   padding-top: 15px;
-  border-top: 1px solid #959595;
+  border-top: 1px solid rgba(116, 116, 116, 0.16);
   p {
-    color: #959595;
+    //color: #959595;
     line-height: 1.71;
     font-weight: 300;
   }

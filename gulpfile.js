@@ -67,7 +67,7 @@ gulp.task('scripts', function() {
 gulp.task('libs', function() {
   return gulp
     .src('./js/vendor/*.js')
-    // .pipe(order(['TweenMax.min.js','ScrollMagic.min.js', '*.js']))
+    .pipe(order(['TweenMax.min.js','ScrollMagic.min.js', '*.js']))
     .pipe(concat('libs.min.js'))
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream());

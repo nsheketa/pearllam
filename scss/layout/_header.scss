@@ -111,7 +111,6 @@ Generated css file from old main.sass
 }
 
 
-
 .wrapper-top-header {
   width: 100%;
   position: fixed;
@@ -151,13 +150,13 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header.resize .right-side .top-menu li a {
-  font-size: 15px;
+  font-size: 14px;
   transition: font-size .5s;
 }
 
 .wrapper-top-header .top-header.resize .right-side .lang-select .text {
   transition: font-size .5s;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .wrapper-top-header .top-header.resize .toggle_mnu {
@@ -204,7 +203,7 @@ Generated css file from old main.sass
     a{
       &:before{
         width: 100%;
-        background-color: $lightpink-color;
+        background-color: $textColor;
       }
       @include on-event{
         &:after{
@@ -223,9 +222,9 @@ Generated css file from old main.sass
   //font-family: "Montserrat", sans-serif;
   font-weight: 300;
   //font-size: 18px;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
-  color: #333333;
+  color: $textColor;
   opacity: 1;
   transition: opacity .5s;
   transition: font-size .5s;
@@ -241,7 +240,7 @@ Generated css file from old main.sass
 
 .wrapper-top-header .top-header .right-side .lang-select .text {
   //font-size: 18px;
-  font-size: 16px;
+  font-size: 14px;
   transition: font-size .5s;
   //font-weight: 400;
   font-weight: 400;
@@ -279,6 +278,9 @@ Generated css file from old main.sass
 
 .wrapper-top-header .top-header .right-side .lang-list li {
   padding-bottom: 7px;
+  a{
+    font-size: 14px;
+  }
 }
 
 .wrapper-top-header .top-header .right-side .lang-list li:last-of-type {
@@ -302,7 +304,7 @@ Generated css file from old main.sass
 
 .wrapper-top-header .top-header .right-side .search-block a svg path {
   //fill: #333333;
-  fill: #333333;
+  fill: $textColor;
 }
 
 .wrapper-top-header .top-header .right-side .navi-hamburger {

@@ -1,4 +1,5 @@
-$fairs-detail-grey: #313131;
+//$fairs-detail-grey: #313131;
+$fairs-detail-grey: #747474;
 $heading-mb: 70px;
 $section-mb: 140px;
 $gap-left: 70px;
@@ -29,34 +30,35 @@ $gap-left: 70px;
   h1 {
     text-transform: uppercase;
     color: $fairs-detail-grey;
-    font-size: 1.25rem; //20
-    font-weight: 100;
+    //font-size: 1.25rem; //20
+    font-weight: 300;
     line-height: 1.2;
   }
 
   @include respond-to(md) {
     margin-bottom: 0;
     h1 {
-      font-size: 2rem;
+      //font-size: 2rem;
     }
   }
   @include respond-to(xl) {
     h1 {
-      font-size: 3.125rem;
+      //font-size: 3.125rem;
     }
   }
 }
 
 .fairs-detail__hero-info {
   p {
-    font-size: 0.875rem; //14
+    //font-size: 0.875rem; //14
+    //font-weight: 300;
     position: relative;
-    font-weight: 300;
     color: $fairs-detail-grey;
     padding-left: 25px;
     &.fairs-detail__hero-date {
       font-size: 0.81rem; //13
-      color: $pink-color;
+      //color: $pink-color;
+      color: $lightgrey-color;
       margin-bottom: 15px;
       padding-left: 0;
     }
@@ -64,7 +66,8 @@ $gap-left: 70px;
       position: absolute;
       left: 0;
       top: 0;
-      fill: $pink-color;
+      //fill: $pink-color;
+      fill: $lightgrey-color;
       width: 19px;
     }
   }
@@ -87,8 +90,8 @@ $gap-left: 70px;
   margin-top: 35px;
   a {
     display: inline-block;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
+    //border-top: 1px solid #ededed;
+    //border-bottom: 1px solid #ededed;
     padding: 22px 0 22px 25px;
 
     @include on-event {
@@ -120,17 +123,17 @@ $gap-left: 70px;
 
 .fairs-detail__title {
   margin-bottom: $heading-mb/2;
-  h2 {
-    font-size: 1.25rem; //20
+  h2, h3 {
+    //font-size: 1.25rem; //20
+    //font-weight: 400;
     line-height: 1.44;
     text-transform: uppercase;
-    font-weight: 400;
   }
 
   @include respond-to(md) {
     margin-bottom: $heading-mb;
     h2 {
-      font-size: 1.56rem; //25
+      //font-size: 1.56rem; //25
     }
   }
 }
@@ -154,7 +157,7 @@ $gap-left: 70px;
 
 .fd-about__content {
   p {
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.875;
     margin-bottom: 40px;
   }
@@ -192,8 +195,8 @@ $gap-left: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-  border-bottom: 1px solid #747474;
-  @include respond-to(md){
+  border-bottom: 1px solid rgba(#747474, 0.16);
+  @include respond-to(md) {
     padding-top: 42px;
     padding-bottom: 42px;
   }
@@ -206,16 +209,17 @@ $gap-left: 70px;
   p {
     text-transform: uppercase;
     font-size: 0.81rem; //13
-    color: $pink-color;
+    //color: $pink-color;
+    color: $lightgrey-color;
     font-weight: 300;
   }
-  @include respond-to(sm){
+  @include respond-to(sm) {
     width: 190px;
     max-width: 190px;
     flex: 1 0 190px;
   }
-  @include respond-to(md){
-    p{
+  @include respond-to(md) {
+    p {
       font-size: 0.875rem; //14
     }
   }
@@ -223,13 +227,13 @@ $gap-left: 70px;
 
 .fs-news__list-content {
   h4 {
-    font-size: 0.875rem; //14
+    //font-size: 0.875rem; //14
     text-transform: uppercase;
     line-height: 1.33;
     font-weight: 400;
   }
   p {
-    font-size: 0.94rem; //15
+    //font-size: 0.94rem; //15
     color: #747474;
     line-height: 1.6;
     font-weight: 300;
@@ -246,7 +250,7 @@ $gap-left: 70px;
   }
   @include respond-to(md) {
     h4 {
-      font-size: 1.125rem; //18
+      //font-size: 1.125rem; //18
     }
   }
 }

@@ -8,10 +8,10 @@
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="icon" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -50,13 +50,13 @@
                 </div>
                 <div class="right-side">
                     <ul class="top-menu">
+                        <li><a href="#" class="hover-opacity-text underline-hover">Viewing room</a></li>
                         <li><a href="artists.html" class="hover-opacity-text underline-hover">Artists</a></li>
                         <li><a href="exhibitions.html" class="hover-opacity-text underline-hover">Exhibitions</a></li>
                         <li class="is-active"><a href="art-fairs.html" class="hover-opacity-text underline-hover">Art fairs</a></li>
                         <li><a href="news.html" class="hover-opacity-text underline-hover">News & Press</a></li>
                         <li><a href="about.html" class="hover-opacity-text underline-hover">about</a></li>
                         <li><a href="contact.html" class="hover-opacity-text underline-hover">Contact</a></li>
-                        <li><a href="#" class="hover-opacity-text underline-hover">Online viewing room</a></li>
                     </ul>
                     <div class="lang-select">
                         <span class="text hover-opacity-text">EN</span>
@@ -103,13 +103,13 @@
         </a>
     </div>
     <ul class="menu-list">
+        <li><a href="#" class="hover-opacity-text">Viewing room</a></li>
         <li><a href="artists.html" class="hover-opacity-text">Artists</a></li>
         <li><a href="exhibitions.html" class="hover-opacity-text">Exhibitions</a></li>
         <li class="is-active"><a href="art-fairs.html" class="hover-opacity-text">Art fairs</a></li>
         <li><a href="news.html" class="hover-opacity-text">News & Press</a></li>
         <li><a href="about.html" class="hover-opacity-text">about</a></li>
         <li><a href="contact.html" class="hover-opacity-text">Contact</a></li>
-        <li><a href="#" class="hover-opacity-text">Online viewing room</a></li>
     </ul>
     <ul class="lang-menu">
         <li><a href="#" class="hover-opacity-text">EN</a></li>
@@ -157,94 +157,81 @@
                         <div class="fairs-years__title">
                             <h4>Years</h4>
                         </div>
-                        <ul class="fairs-years__list">
-                            <li class="is-active"><a href="#">2020</a></li>
-                            <li><a href="#">2019</a></li>
-                            <li><a href="#">2018</a></li>
-                            <li><a href="#">2017</a></li>
-                            <li><a href="#">2016</a></li>
-                            <li><a href="#">2015</a></li>
-                            <li><a href="#">2014</a></li>
-                        </ul>
+                        <div class="fairs-years__list-wrap">
+                            <div class="fairs-years__list slick__slider fairs-years__list--mobile">
+                                <div class="fairs-years__list-item is-active"><a href="#">2020</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2019</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2018</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2017</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2016</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2015</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2014</a></div>
+                            </div>
+
+                            <div class="fairs-years__list fairs-years__list--desktop">
+                                <div class="fairs-years__list-item is-active"><a href="#">2020</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2019</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2018</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2017</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2016</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2015</a></div>
+                                <div class="fairs-years__list-item"><a href="#">2014</a></div>
+                            </div>
+                            <div class="slick__slider-nav fairs-years__list-nav">
+                                <button class="slick__slider-btn slick__slider-btn--prev">
+                                    <span></span>
+                                </button>
+                                <button class="slick__slider-btn slick__slider-btn--next">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-11">
-                    <div class="row fairs__row">
-                        <div class="col-lg-8">
-                            <div class="fairs-media">
-                                <img src="img/art-fairs/01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="fairs-content">
-                                <p class="fairs-content__date">7 - 10 May 2020</p>
-                                <h2>ART COLOGNE 2019</h2>
-                                <p>Piers 92 & 94, 711 12th Avenue at 55th
-                                    Street, New York City, USA</p>
-                            </div>
+                <div class="col-xl-11 fairs-rows">
+                    <div class="fairs__row">
+                        <div class="fairs-content">
+                            <p class="fairs-content__date">7 - 10 May 2020</p>
+                            <h2> <a href="art-fairs-details.html">ART COLOGNE 2019</a></h2>
+                            <p>Piers 92 & 94, 711 12th Avenue at 55th
+                                Street, New York City, USA</p>
                         </div>
                     </div>
-                    <div class="row fairs__row">
-                        <div class="col-lg-8">
-                            <div class="fairs-media">
-                                <img src="img/art-fairs/02.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="fairs-content">
-                                <p class="fairs-content__date">7 - 10 May 2020</p>
-                                <h2>ART BASEL HK 2019</h2>
-                                <p>West Bund Art Centre, Shanghai,
-                                    China</p>
-                            </div>
+                    <div class="fairs__row">
+                        <div class="fairs-content">
+                            <p class="fairs-content__date">7 - 10 May 2020</p>
+                            <h2><a href="art-fairs-details.html">ART BASEL HK 2019</a></h2>
+                            <p>West Bund Art Centre, Shanghai,
+                                China</p>
                         </div>
                     </div>
-                    <div class="row fairs__row">
-                        <div class="col-lg-8">
-                            <div class="fairs-media">
-                                <img src="img/art-fairs/03.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="fairs-content">
-                                <p class="fairs-content__date">7 - 10 May 2020</p>
-                                <h2>THE ARMORY
-                                    SHOW 2019</h2>
-                                <p>Piers 92 & 94, 711 12th Avenue at 55th
-                                    Street, New York City, USA</p>
-                            </div>
+                    <div class="fairs__row">
+
+
+                        <div class="fairs-content">
+                            <p class="fairs-content__date">7 - 10 May 2020</p>
+                            <h2><a href="art-fairs-details.html">THE ARMORY
+                                SHOW 2019</a></h2>
+                            <p>Piers 92 & 94, 711 12th Avenue at 55th
+                                Street, New York City, USA</p>
                         </div>
                     </div>
-                    <div class="row fairs__row">
-                        <div class="col-lg-8">
-                            <div class="fairs-media">
-                                <img src="img/art-fairs/04.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="fairs-content">
-                                <p class="fairs-content__date">7 - 10 May 2020</p>
-                                <h2>ART STAGE JAKARTA
-                                    2016</h2>
-                                <p>BEXCO Exhibition Center Hall 1, 55
-                                    APEC-ro, Haeundae-gu, Busan 48060,
-                                    Korea</p>
-                            </div>
+                    <div class="fairs__row">
+                        <div class="fairs-content">
+                            <p class="fairs-content__date">7 - 10 May 2020</p>
+                            <h2><a href="art-fairs-details.html">ART STAGE JAKARTA
+                                2016</a></h2>
+                            <p>BEXCO Exhibition Center Hall 1, 55
+                                APEC-ro, Haeundae-gu, Busan 48060,
+                                Korea</p>
                         </div>
                     </div>
-                    <div class="row fairs__row">
-                        <div class="col-lg-8">
-                            <div class="fairs-media">
-                                <img src="img/art-fairs/05.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="fairs-content">
-                                <p class="fairs-content__date">7 - 10 May 2020</p>
-                                <h2>WEST BUND 2019</h2>
-                                <p>West Bund Art Centre, Shanghai,
-                                    China</p>
-                            </div>
+                    <div class="fairs__row">
+                        <div class="fairs-content">
+                            <p class="fairs-content__date">7 - 10 May 2020</p>
+                            <h2><a href="art-fairs-details.html">WEST BUND 2019</a></h2>
+                            <p>West Bund Art Centre, Shanghai,
+                                China</p>
                         </div>
                     </div>
                 </div>
@@ -282,10 +269,12 @@
             </div>
             <div class="item fadeIn">
                 <ul class="footer-menu">
+                    <li><a href="#" class="underline-hover">Viewing Room</a></li>
                     <li><a href="#" class="underline-hover">Artists</a></li>
                     <li><a href="#" class="underline-hover">Exhibitions</a></li>
                     <li><a href="#" class="underline-hover">Art fairs</a></li>
-                    <li><a href="#" class="underline-hover">News Press</a></li>
+                    <li><a href="#" class="underline-hover">News & Press</a></li>
+                    <li><a href="#" class="underline-hover">About</a></li>
                     <li><a href="#" class="underline-hover">Contact</a></li>
                 </ul>
             </div>
@@ -398,7 +387,7 @@
 
 <!--<script src='https://rawgit.com/BGStock/jquery-background-video/master/jquery.background-video.js'></script>-->
 
-<script src="js/common.min.js"></script>
+<script src="js/common.js"></script>
 
 </body>
 </html>

@@ -4,14 +4,14 @@
 footer {
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  padding: 155px 0 60px;
+  padding: 50px 0 50px;
   background-color: #878787;
 
   @include respond-max(1660){
-    padding-top: 100px;
+    padding-top: 50px;
   }
   @include respond-max(992){
-    padding-top: 60px;
+    padding-top: 50px;
   }
 }
 
@@ -44,7 +44,7 @@ footer .footer-bottom-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 30px;
   border-top: 1px solid #ababab;
 
   .item {
@@ -71,8 +71,8 @@ footer .footer-bottom-section .footer-menu li {
 }
 
 footer .footer-bottom-section .footer-menu li a {
-  font-size: 16px;
-  font-weight: 200;
+  font-size: 14px;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -118,7 +118,7 @@ footer .form-wrapper {
 
 footer .form-wrapper.bottom {
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   max-width: 670px;
   @include center;
 }
@@ -201,7 +201,7 @@ footer .copyright {
   line-height: 16px;
   font-weight: 300;
   color: #adadad;
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 footer .copyright a.copy-link {

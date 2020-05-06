@@ -1,77 +1,193 @@
 //art fairs page
 .fairs {
   padding-bottom: 50px;
-  @include respond-to(md){
+
+  .scrollmagic-pin-spacer {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+  @include respond-to(md) {
     padding-bottom: 150px;
   }
 }
 
-.fairs__row {
-  margin-bottom: 55px;
-  @include respond-to(md) {
-    margin-bottom: 80px;
+.fairs-rows{
+  padding-top: 30px;
+  background-color: rgba(72, 65, 68, 0.17);
+  @include respond-to(lg){
+    padding-left: calc(8.33% + 15px);
   }
 }
 
+
 .fairs-years {
-  display: flex;
-  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #fff;
+  @include transition-03;
+  &.is-scrolling {
+    position: fixed;
+    top: 77px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto;
+    z-index: 20;
+    padding-bottom: 15px !important;
+    padding-top: 15px;
+    @include respond-max(1200){
+      width: 100% !important;
+    }
+
+    .fairs-years__list-nav {
+      bottom: 0;
+    }
+  }
+
   @include respond-to(lg) {
     display: block;
-    text-align: center;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    &.is-scrolling {
+      left: auto !important;
+      right: auto !important;
+      margin: auto;
+      z-index: 20;
+      padding: 10px 0 !important;
+      width: calc(8.33% - 15px);
+      max-width: 70px;
+    }
   }
 }
 
 .fairs-years__title {
   text-transform: uppercase;
-  width: 33.33%;
-  max-width: 33.33%;
+  margin-bottom: 10px;
+  @include transition-03;
+  h4{
+    //font-weight: normal;
+  }
   @include respond-to(lg) {
-    margin-bottom: 67px;
+    margin-bottom: 10px;
     width: 100%;
     max-width: 100%;
   }
-  @include respond-to(xl) {
+}
+
+.fairs-years__list-wrap {
+  position: relative;
+  @include transition-03;
+  @include respond-to(lg) {
+    width: 100%;
+    max-width: 100%;
+    //border-bottom: 1px solid $lightgrey-color;
   }
 }
 
 .fairs-years__list {
-  width: 66.66%;
-  max-width: 66.66%;
-  column-count: 2;
-  li {
-    display: block;
-    margin-bottom: 25px;
-    &.is-active {
-      a {
-        color: $pink-color;
-        @include no-underline-on-hover($pink-color);
+  @include transition-03;
+  &--desktop {
+    display: none;
+  }
+  @include respond-to(lg) {
+    opacity: 1 !important;
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+.fairs-years__list-nav {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  max-width: 300px;
+  height: 30px;
+  @include center;
+  justify-content: center;
+  @include transition-03;
+  .slick__slider-btn {
+    margin: 0 10px;
+    position: absolute;
+    bottom: -5px;
+    @include square(30px);
+    border-radius: 50%;
+    span {
+      @include square(15px);
+    }
+    &--prev {
+      left: 0;
+      span {
+        transform: rotate(45deg) translate(3px, -3px);
       }
     }
+    &--next {
+      right: 0;
+      span {
+        transform: rotate(45deg) translate(-3px, 3px);
+      }
+    }
+  }
+  @include respond-to(lg) {
+    display: none;
+  }
+}
 
+.fairs-years__list-item {
+  display: block;
+  &.slick-active, &.is-active {
     a {
-      color: $lightgrey-color;
-      font-weight: 100;
-      @include underline-hover($lightgrey-color);
+      //color: $pink-color;
+      @include no-underline-on-hover($lightgrey-color);
     }
   }
 
+  a {
+    color: $lightgrey-color;
+    font-weight: normal;
+    @include underline-hover($lightgrey-color);
+    font-size: 14px;
+  }
   @include respond-to(lg) {
-    width: 100%;
-    max-width: 100%;
-    border-bottom: 1px solid $lightgrey-color;
-    column-count: 1;
+    opacity: 1 !important;
+    margin-bottom: 10px;
   }
-  @include respond-to(xl) {
+}
 
+
+.fairs__row{
+  position: relative;
+  margin-bottom: 50px;
+  @include on-event{
+    .fairs-media{
+      img{
+        transform: scale(1.1,1.1);
+      }
+    }
   }
+  @include respond-to(lg) {
+    margin-bottom: 60px;
+  }
+}
+
+.fairs__row-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include square(100%);
+  z-index: 1;
 }
 
 .fairs-media {
   margin-bottom: 20px;
+  overflow: hidden;
   img {
     width: 100%;
+    transition: 3.5s all ease;
   }
   @include respond-to(md) {
     margin-bottom: 0;
@@ -86,19 +202,22 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     line-height: 1.2;
+    @include transition-04;
+
+    a{
+      position: relative;
+      @include underline-hover($lightgrey-color);
+    }
   }
   p {
-    font-size: 0.875rem; //14
-    font-weight: 100;
-    color: $lightgrey-color;
     line-height: 1.5;
     &.fairs-content__date {
-      color: $pink-color;
+      //color: $pink-color;
       margin-bottom: 10px;
     }
   }
 
-  @include respond-to(md) {
+  @include respond-to(lg) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +226,7 @@
       margin-bottom: 30px;
     }
     p {
-      font-size: 1rem;
+      //font-size: 1rem;
       &.fairs-content__date {
         margin-bottom: 25px;
       }

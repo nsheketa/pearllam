@@ -1,64 +1,74 @@
-.about{
+.about-hero {
   padding-bottom: 70px;
-  p{
-    font-size: 0.875rem; //14
+
+  @include respond-to(md) {
+    padding-bottom: 130px;
+  }
+}
+
+.about-hero__media {
+  img {
+    width: 100%;
+  }
+}
+
+.about {
+  padding-bottom: 70px;
+  p {
     line-height: 1.8;
     letter-spacing: 0.05em;
     font-weight: 300;
     margin-bottom: 55px;
-    &:last-of-type{
+    &:last-of-type {
       margin-bottom: 0;
     }
   }
 
-  @include respond-to(md){
+  @include respond-to(md) {
     padding-bottom: 200px;
-    p{
-      font-size: 1rem;
-    }
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     p {
-      font-size: 1.25rem; //20
+      //font-size: 1.25rem; //20
     }
   }
 }
 
-.about-row{
+.about-row {
   margin-bottom: 60px;
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 0;
   }
-  &--featured{
+  &--featured {
     margin-bottom: 135px;
-    p{
-      font-size: 1rem;
+    p {
+      //font-size: 1rem;
       line-height: 1.92;
     }
   }
-  &--text-left{
+  &--text-left {
     .about-content__wrap {
       margin-bottom: 55px;
     }
-    .about-image__wrap{
+    .about-image__wrap {
       margin-bottom: 0;
     }
   }
 
-  @include respond-to(md){
+  @include respond-to(md) {
     margin-bottom: 100px;
-    &--featured{
+    &--featured {
       margin-bottom: 80px;
-      p{
-        font-size: 1.25rem;
+      p {
+        //font-size: 1.25rem;
       }
     }
-    &--text-left{
+    &--text-left {
       .about-content__wrap {
         margin-bottom: 0px;
       }
     }
-    &--text-right{
+    &--text-right {
       .about-content__wrap {
         padding-left: 25px;
         padding-right: 0;
@@ -66,25 +76,25 @@
     }
   }
 
-  @include respond-to(xl){
-    &--featured{
-      p{
-        font-size: 1.56rem;  //25
+  @include respond-to(xl) {
+    &--featured {
+      p {
+        //font-size: 1.56rem; //25
       }
     }
   }
 
-  @include respond-to(xxl){
+  @include respond-to(xxl) {
     margin-bottom: 160px;
-    &--featured{
+    &--featured {
       margin-bottom: 125px;
-      &.about-row--text-right{
-        .about-content__wrap{
+      &.about-row--text-right {
+        .about-content__wrap {
           padding-left: 74px;
         }
       }
     }
-    &--text-right{
+    &--text-right {
       .about-content__wrap {
         padding-left: 85px;
       }
@@ -92,26 +102,26 @@
   }
 }
 
-.about-image__wrap{
+.about-image__wrap {
   margin-bottom: 34px;
-  img{
+  img {
     width: 100%;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     margin-bottom: 0;
   }
 }
 
-.about-content__wrap{
+.about-content__wrap {
 
-  @include respond-to(md){
+  @include respond-to(md) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding-right: 25px;
   }
-  @include respond-to(xxl){
+  @include respond-to(xxl) {
     padding-right: 85px;
   }
 }
