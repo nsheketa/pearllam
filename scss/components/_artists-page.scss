@@ -1,0 +1,41 @@
+.artists-section__controls {
+  margin-bottom: 50px;
+  ul {
+
+  }
+  li {
+    position: relative;
+    display: inline-block;
+    &:not(:first-of-type) {
+      &:before {
+        content: '/';
+        display: inline-block;
+        font-size: inherit;
+        color: inherit;
+        margin: 0 15px;
+      }
+    }
+    &.is-active {
+      pointer-events: none;
+      a {
+        @include no-underline-on-hover($textColor)
+      }
+    }
+  }
+  a {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include underline-hover($textColor);
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 70px;
+    li {
+
+    }
+    a{
+      font-size: 1.125rem;
+    }
+  }
+}

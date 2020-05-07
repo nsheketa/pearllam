@@ -1,0 +1,102 @@
+//Artist detail page hero section
+
+.artist-detail__hero{
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.artist-detail__title{
+
+}
+
+.ad-hero__carousel-wrap{
+  position: relative;
+}
+
+.ad-hero__carousel{
+
+}
+
+.ad-hero__carousel-item{
+
+}
+
+.ad-hero__carousel-item-media{
+  margin-bottom: 20px;
+  img{
+    width: 100%;
+  }
+  @include respond-to(md){
+    margin-bottom: 30px;
+  }
+}
+
+.ad-hero__carousel-nav{
+  padding-top: 40px;
+  max-width: 230px;
+  @include center;
+  .slick__slider-btn{
+    width: 90px;
+  }
+  &--desk{
+    display: none;
+  }
+  @include respond-to(sm){
+    max-width: none;
+  }
+  @include respond-to(lg){
+    padding-top: 0;
+    &--desk{
+      display: flex;
+    }
+    &--mob{
+      display: none;
+    }
+    .slick__slider-btn{
+      width: 40px;
+      top: 40%;
+    }
+  }
+}
+
+.ad-hero__content{
+  @include respond-to(md) {
+    display: flex;
+    align-items: flex-start;
+    p{
+      max-width: 460px;
+      margin-left: auto;
+      padding-left: 20px;
+    }
+  }
+}
+
+.artist-detail__title{
+  h1{
+    margin-bottom: 30px;
+  }
+  @include respond-to(md){
+    h1{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ad-hero__slick-paging{
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  li{
+    display: none;
+    &.slick-active{
+      display: block;
+    }
+  }
+  @include respond-to(md){
+    text-align: right;
+    margin-bottom: 30px;
+  }
+}

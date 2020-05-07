@@ -1,0 +1,98 @@
+.exhibitions-section {
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.exhibitions-section__carousel-wrap {
+  position: relative;
+
+  .slick__slider-nav {
+    padding-top: 40px;
+    max-width: 230px;
+    @include center;
+    .slick__slider-btn {
+      width: 90px;
+    }
+    @include respond-to(sm) {
+      max-width: none;
+    }
+    @include respond-to(lg) {
+      padding-top: 0;
+      .slick__slider-btn {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.exhibitions-section__carousel {
+  @include respond-to(md) {
+    margin: 0 -20px;
+  }
+  @include respond-to(xl) {
+    margin: 0 -50px;
+  }
+  @include respond-to(xxl) {
+    margin: 0 -75px;
+  }
+}
+
+.exhibitions-section__item-inner {
+  display: block;
+
+  @include on-event {
+    .exhibitions-section__item-media {
+      img {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+  @include respond-to(md) {
+    padding: 0 20px;
+  }
+  @include respond-to(xl) {
+    padding: 0 50px;
+  }
+  @include respond-to(xxl) {
+    padding: 0 75px;
+  }
+}
+
+.exhibitions-section__item-content {
+  .date {
+    margin-bottom: 15px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  h3 {
+    padding-top: 15px;
+    border-top: 1px solid #ededed;
+    margin-bottom: 15px;
+  }
+  @include respond-to(md) {
+    .date {
+      margin-bottom: 20px;
+    }
+    h3 {
+      padding-top: 20px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.exhibitions-section__item-media {
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    transition: 3.5s all ease;
+  }
+  @include respond-to(md) {
+    margin-bottom: 40px;
+  }
+}

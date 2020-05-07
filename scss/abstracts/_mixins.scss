@@ -454,7 +454,7 @@
   @include on-event{
     &:before{
       width: 100%;
-      background: #333333;
+      background: $color;
       transition: width .35s ease;
     }
     &:after{

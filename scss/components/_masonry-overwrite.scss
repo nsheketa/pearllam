@@ -1,0 +1,30 @@
+.masonry-grid{
+  width: 100%;
+}
+
+.masonry-grid__sizer,
+.masonry-grid__item {
+  //width: 33.33%;
+}
+
+//.artists-list{
+//  .masonry-grid__sizer,
+//  .masonry-grid__item {
+//    width: 50%;
+//  }
+//
+//  @include respond-to(md){
+//    .masonry-grid__sizer,
+//    .masonry-grid__item {
+//      width: 33.33%;
+//    }
+//  }
+//  @include respond-to(xl){
+//    &.artists-list--list-view{
+//      .masonry-grid__sizer,
+//      .masonry-grid__item {
+//        width: 25%;
+//      }
+//    }
+//  }
+//}

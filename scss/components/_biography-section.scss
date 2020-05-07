@@ -1,0 +1,91 @@
+.biography {
+  padding-bottom: $section-mb/2;
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.biography-row {
+  &--text-right {
+    .biography-media {
+      margin-bottom: 45px;
+    }
+    @include respond-to(md) {
+      .biography-media {
+        max-width: 734px;
+        margin-left: auto;
+        margin-bottom: 0;
+      }
+      .biography-content {
+        max-width: 630px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.biography-row {
+  margin-bottom: 60px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  @include respond-to(md) {
+    margin-bottom: 70px;
+  }
+}
+
+.biography-row {
+  &--text-left {
+    .biography-content {
+      margin-bottom: 45px;
+    }
+    @include respond-to(md) {
+      .biography-media {
+        max-width: 640px;
+      }
+      .biography-content {
+        max-width: 590px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.biography-media {
+  max-width: 640px;
+  @include center;
+  img {
+    width: 100%;
+  }
+  @include respond-to(md) {
+    margin-bottom: 0;
+  }
+}
+
+.biography-content {
+  p {
+    line-height: 1.875;
+  }
+  @include respond-to(md) {
+    padding-top: 30px;
+  }
+  @include respond-to(xl) {
+    padding-top: 70px;
+  }
+  @include respond-to(xxl) {
+    padding-top: 120px;
+  }
+}
+
+.biography-content__links {
+  margin-top: 50px;
+
+  a {
+    position: relative;
+    display: inline-block;
+  }
+
+  @include respond-to(xl) {
+    margin-top: 90px;
+  }
+}
