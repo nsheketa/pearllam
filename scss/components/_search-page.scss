@@ -1,0 +1,203 @@
+.search {
+  padding-bottom: $section-mb/2;
+
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.search-nav {
+  margin-bottom: 50px;
+
+  h3 {
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 0.875rem; //14
+    margin-bottom: 10px;
+  }
+  @include respond-to(md) {
+    margin-bottom: 0;
+  }
+}
+
+.search-nav__results {
+  font-weight: bolder;
+}
+
+.search-nav__list-quantity {
+  color: $pink-color;
+}
+
+.search__results {
+  margin-bottom: $section-mb / 2;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include respond-to(md) {
+    margin-bottom: $section-mb;
+  }
+}
+
+.search__results-title {
+  margin-bottom: 35px;
+  h4 {
+    text-transform: uppercase;
+  }
+  span {
+    color: $pink-color;
+  }
+  @include respond-to(md) {
+    margin-bottom: 65px;
+  }
+}
+
+.search-results__item {
+  margin-bottom: 35px;
+  display: flex;
+  @include respond-to(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.search-results__item-media {
+  overflow: hidden;
+  max-width: 106px;
+  width: 106px;
+  flex: 1 0 auto;
+  img {
+    width: 100%;
+    transition: 3.5s all ease-in-out;
+  }
+  @include on-event {
+    img {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  @include respond-to(xs) {
+    max-width: 140px;
+    width: 140px;
+  }
+  @include respond-to(sm) {
+    max-width: 200px;
+    width: 200px;
+  }
+  @include respond-to(md) {
+    max-width: 310px;
+    width: 310px;
+  }
+}
+
+.search-results__item-content {
+  display: block;
+  padding-left: 20px;
+
+  @include respond-to(md) {
+    padding-left: 30px;
+  }
+  @include respond-to(lg) {
+    padding-left: 45px;
+  }
+  @include respond-to(xl) {
+    padding-left: 90px;
+  }
+}
+
+.search-results__item-title {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  h3 {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+    @include underline-hover($textColor);
+  }
+
+  @include respond-to(md) {
+    margin-bottom: 25px;
+  }
+}
+
+.search-results__item-date {
+  margin-bottom: 10px;
+
+  @include respond-to(md) {
+    margin-bottom: 15px;
+  }
+}
+
+.search-results__item-location {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 0;
+
+  @include respond-to(md) {
+    margin-bottom: 45px;
+  }
+}
+
+.search-results__item-info {
+  display: none;
+
+  @include respond-to(md) {
+    display: block;
+  }
+}
+
+//ART FAIRS
+.search__results--art-fairs {
+  .search-results__item-info {
+    text-transform: uppercase;
+    display: none;
+    @include respond-to(md){
+      display: block;
+    }
+  }
+}
+
+//WORKS
+.search__results--works {
+
+  .search-results__item{
+    p{
+      margin-bottom: 10px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .search-results__item-title {
+    border-bottom: 1px solid rgba(116, 116, 116, 0.16);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    h3 {
+      &:after, &:before{
+        display: none;
+      }
+    }
+  }
+  
+  .search-results__work-info{
+    display: block;
+  }
+
+  .search-results__work-sizes{
+    text-transform: uppercase;
+  }
+  @include respond-to(md){
+    .search-results__item{
+      p{
+        margin-bottom: 40px;
+      }
+    }
+    .search-results__item-title {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+  }
+}
