@@ -6,30 +6,30 @@
 }
 
 .news-list__wrap {
-  @include respond-to(md){
+  @include respond-to(md) {
     margin: 0 -15px;
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     margin: 0 -35px;
   }
 }
-
-.news-list {
-}
-
-.news-list__item-wrap {
-
-
-}
-
 .news-list__item {
+  position: relative;
   margin-bottom: 40px;
+
+  @include on-event {
+    .news-list__item-media {
+      img {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
 
   @include respond-to(md) {
     padding: 0 15px;
     margin-bottom: 70px;
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     padding: 0 35px;
   }
   @include respond-to(xxl) {
@@ -39,10 +39,12 @@
 
 .news-list__item-media {
   margin-bottom: 20px;
+  overflow: hidden;
   img {
     width: 100%;
+    transition: 3.5s all ease-in-out;
   }
-  @include respond-to(md){
+  @include respond-to(md) {
     margin-bottom: 35px;
   }
 }
@@ -65,21 +67,20 @@
     }
     &.news-list__item-date {
       text-transform: uppercase;
-      color: $pink-color;
       order: 1;
       display: block;
     }
   }
 
-  @include respond-to(md){
-    p{
+  @include respond-to(md) {
+    p {
       display: block;
       order: 2;
       &.news-list__item-date {
         order: 0;
       }
     }
-    h4{
+    h4 {
       order: 1;
       margin-bottom: 30px;
     }
@@ -90,4 +91,12 @@
   @include respond-to(md) {
     text-align: right;
   }
+}
+
+.new-list__item-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  @include square(100%);
+  z-index: 1;
 }

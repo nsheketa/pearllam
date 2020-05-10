@@ -50,6 +50,11 @@
     text-transform: uppercase;
     line-height: 1.33;
     //font-weight: 400;
+
+    a {
+      position: relative;
+      @include underline-hover($textColor);
+    }
   }
   p {
     //font-size: 0.94rem; //15

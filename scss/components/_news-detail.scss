@@ -28,6 +28,7 @@
 }
 
 .news-detail__content {
+
   @include respond-to(md) {
     padding-left: 20px;
   }
