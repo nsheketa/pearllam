@@ -19,6 +19,10 @@
   }
 }
 
+.installation__carousel-item{
+  outline: none !important;
+}
+
 .installation__item-inner{
   @include respond-to(md) {
     padding: 0 15px;
@@ -38,5 +42,9 @@
 .installation__item-content{
   p{
     text-transform: uppercase;
+    a{
+      position: relative;
+      @include underline-hover($textColor);
+    }
   }
 }

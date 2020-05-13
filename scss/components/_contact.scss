@@ -8,7 +8,7 @@
 .contact-links__wrap {
   margin-bottom: 30px;
   @include respond-to(md) {
-    padding-top: 20px;
+    margin-top: -20px;
   }
   @include respond-to(lg){
     margin-bottom: 0;

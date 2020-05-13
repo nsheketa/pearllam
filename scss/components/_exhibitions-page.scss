@@ -1,5 +1,6 @@
 .exhibitions {
   padding-bottom: 50px;
+  visibility: visible !important;
   @include respond-to(md) {
     padding-bottom: 150px;
   }
@@ -7,13 +8,11 @@
 
 .exhibitions__inner {
   position: relative;
-  @include respond-to(md) {
-
-  }
 }
 
 .exhibitions-nav__wrap {
-  .scrollmagic-pin-spacer{
+  visibility: visible !important;
+  .scrollmagic-pin-spacer {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
@@ -33,11 +32,11 @@
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 10px;
-    &:last-of-type{
+    &:last-of-type {
       margin-bottom: 0;
     }
-    &.is-active{
-      a{
+    &.is-active {
+      a {
         @include no-underline-on-hover($textColor);
       }
     }
@@ -61,18 +60,19 @@
   }
 }
 
-.exhibitions-nav{
-  &.is-scrolling{
-    top: 77px !important;
-    background-color: #fff;
+.exhibitions-nav {
+  &.is-scrolling {
+    top: 100px !important;
     z-index: 20;
     padding: 15px 0 !important;
 
-    @include respond-max(1200){
+    @include respond-max(1200) {
+      top: 77px !important;
       left: 0 !important;
       right: 0 !important;
       width: 100% !important;
       padding-left: 15px !important;
+      background-color: #fff;
     }
   }
 }
@@ -95,10 +95,10 @@
 .exhibitions-list__item {
   position: relative;
   margin-bottom: 40px;
-
-  @include on-event{
-    .exhibition-list__item-media{
-      img{
+  visibility: visible !important;
+  @include on-event {
+    .exhibition-list__item-media {
+      img {
         transform: scale(1.1, 1.1);
       }
     }
@@ -106,8 +106,8 @@
   @include respond-to(md) {
     margin-bottom: 50px;
 
-    @include on-event{
-      .exhibition-list__item-top{
+    @include on-event {
+      .exhibition-list__item-top {
         opacity: 1;
         visibility: visible;
         z-index: 1;
@@ -117,7 +117,7 @@
   }
 }
 
-.exhibitions-list__item-link{
+.exhibitions-list__item-link {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +164,7 @@
   @include respond-to(xl) {
     padding: 50px 70px 50px 70px;
   }
-  @include respond-min(1660){
+  @include respond-min(1660) {
     padding-left: 120px;
   }
 }
@@ -233,7 +233,7 @@
         text-transform: uppercase;
       }
     }
-    &.location{
+    &.location {
       text-transform: uppercase;
     }
   }

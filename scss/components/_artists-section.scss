@@ -19,16 +19,11 @@
       display: none;
     }
   }
-  @include respond-to(xl) {
-    &.artists-list--list-view {
-
-    }
-  }
 }
 
 .artists-list__item {
   padding: 0 15px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 50%;
   max-width: 50%;
 
@@ -37,7 +32,7 @@
     max-width: 33.33%;
   }
   @include respond-to(xl) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     @include when-inside('.artists-list--list-view'){
       width: 25%;
       max-width: 25%;
@@ -99,7 +94,7 @@
 }
 
 .artist-list__item-media {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
   img {
     width: 100%;
@@ -107,6 +102,6 @@
   }
 
   @include respond-to(md) {
-    margin-bottom: 33px;
+    margin-bottom: 20px;
   }
 }

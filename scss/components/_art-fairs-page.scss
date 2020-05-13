@@ -13,7 +13,7 @@
 
 .fairs-rows{
   padding-top: 30px;
-  background-color: rgba(72, 65, 68, 0.17);
+  //background-color: rgba(72, 65, 68, 0.17);
   @include respond-to(lg){
     padding-left: calc(8.33% + 15px);
   }
@@ -55,6 +55,7 @@
     background-color: transparent;
     max-width: 70px;
     &.is-scrolling {
+      top: 100px !important;
       left: auto !important;
       right: auto !important;
       margin: auto;
@@ -167,7 +168,10 @@
 
 .fairs__row{
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba($textColor, 0.5);
+  visibility: visible !important;
   @include on-event{
     .fairs-media{
       img{
@@ -176,7 +180,11 @@
     }
   }
   @include respond-to(lg) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+  @include respond-to(xl) {
+    margin-left: 45px;
   }
 }
 
@@ -234,11 +242,8 @@
     p {
       //font-size: 1rem;
       &.fairs-content__date {
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
       }
     }
-  }
-  @include respond-to(xl) {
-    padding-left: 45px;
   }
 }

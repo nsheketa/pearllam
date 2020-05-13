@@ -76,8 +76,10 @@
     p {
       display: block;
       order: 2;
+      color: $lightgrey-color;
       &.news-list__item-date {
         order: 0;
+        color: $textColor;
       }
     }
     h4 {

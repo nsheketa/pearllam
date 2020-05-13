@@ -2,8 +2,8 @@
   position: relative;
   display: inline-block;
   padding: 15px 0 15px 25px;
-  &:before{
-    content: '';
+  @include underline-hover($textColor);
+  span{
     display: block;
     @include square(5px);
     border-right: 1px solid $textColor;
@@ -15,11 +15,6 @@
     left: 0;
     margin: auto;
   }
-
-  @include on-event{
-    color: $pink-color;
-  }
-
   @include respond-to(md){
     padding: 20px 0 20px 25px;
   }

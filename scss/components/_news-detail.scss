@@ -6,8 +6,8 @@
 }
 
 .news-detail__date {
-  font-size: 14px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .news-detail-title {
@@ -29,6 +29,9 @@
 
 .news-detail__content {
 
+  p{
+    color: $lightgrey-color;
+  }
   @include respond-to(md) {
     padding-left: 20px;
   }
@@ -47,7 +50,8 @@
   margin-top: 70px;
   a {
     position: relative;
-    @include underline-hover($textColor);
+    @include underline-hover($lightgrey-color);
+    color: $lightgrey-color;
     &:after{
       width: 100%;
     }
