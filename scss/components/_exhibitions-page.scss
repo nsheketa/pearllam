@@ -27,7 +27,7 @@
 
 .exhibitions-nav {
   margin-bottom: 60px;
-  transition: 0;
+  transition: 0s;
   li {
     font-size: 14px;
     font-weight: normal;
@@ -49,7 +49,6 @@
   @include respond-to(lg) {
     max-width: 200px;
     padding: 20px 15px 20px 0;
-    //border: 1px solid #d4d4d4;
     border-left: none;
     border-right: none;
     margin-left: 0 !important;
@@ -159,13 +158,10 @@
     top: 0;
     left: 0;
     @include square(100%);
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
   }
   @include respond-to(xl) {
-    padding: 50px 70px 50px 70px;
-  }
-  @include respond-min(1660) {
-    padding-left: 120px;
+    padding: 50px 70px;
   }
 }
 
@@ -188,7 +184,6 @@
 
     p {
       color: #fff;
-      //font-weight: 300;
       line-height: 1.875;
     }
   }

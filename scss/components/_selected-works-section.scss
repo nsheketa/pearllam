@@ -1,7 +1,4 @@
 $fairs-detail-grey: #313131;
-$heading-mb: 70px;
-$section-mb: 140px;
-$gap-left: 70px;
 /*****************************/
 /*  SELECTED WORKS */
 
@@ -25,12 +22,12 @@ $gap-left: 70px;
     width: 90px;
     color: #959595;
     border-color: #959595;
-    span{
+    span {
       border-color: #959595;
     }
   }
 
-  @include respond-to(sm){
+  @include respond-to(sm) {
     max-width: none;
     padding: 40px 35px 0;
   }
@@ -41,17 +38,17 @@ $gap-left: 70px;
     .slick__slider-btn {
       width: 40px;
 
-      &--prev{
+      &--prev {
         left: -50px;
       }
-      &--next{
+      &--next {
         right: -50px;
       }
     }
   }
 }
 
-.selected-works__carousel{
+.selected-works__carousel {
   @include respond-to(sm) {
     margin: 0 0 0 -35px;
   }
@@ -72,11 +69,9 @@ $gap-left: 70px;
   height: 100%;
   padding: 0 0px 0 25px;
   @include respond-to(sm) {
-    //padding: 0 35px;
     padding: 0 0 0 70px;
   }
   @include respond-to(xl) {
-    //padding: 0 50px;
     padding: 0 0 0 100px;
   }
 }
@@ -84,22 +79,22 @@ $gap-left: 70px;
 .selected-works__item-media {
   position: relative;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   img {
     width: 100%;
   }
 
-  @include respond-to(sm){
+  @include respond-to(sm) {
     padding-bottom: 124%;
     overflow: hidden;
-    img{
+    img {
       position: absolute;
       top: 0;
       left: 0;
     }
   }
   @include respond-to(md) {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 }
 
@@ -108,18 +103,17 @@ $gap-left: 70px;
   top: 0%;
   transform: rotate(-90deg) translateX(-100%) translate(20px, -5px);
   transform-origin: left bottom;
-  p{
+  p {
     color: $fairs-detail-grey;
     font-size: 13px;
-    //font-weight: 300;
     letter-spacing: 0.1em;
     white-space: nowrap;
   }
 
-  @include respond-to(md){
+  @include respond-to(md) {
     transform: rotate(-90deg) translateX(-100%) translate(20px, -10px);
   }
-  @include respond-to(xl){
+  @include respond-to(xl) {
     transform: rotate(-90deg) translateX(-100%) translate(20px, -20px);
   }
 }
@@ -127,18 +121,14 @@ $gap-left: 70px;
 .selected-works__item-title {
   padding-bottom: 15px;
   h4 {
-    //font-size: 1rem;
     line-height: 1.45;
-    a{
+    a {
       position: relative;
       @include underline-hover($textColor);
     }
   }
   @include respond-to(md) {
-    padding-bottom: 40px;
-    h4 {
-      //font-size: 1.125rem; //18
-    }
+    padding-bottom: 20px;
   }
 }
 
@@ -146,9 +136,7 @@ $gap-left: 70px;
   padding-top: 15px;
   border-top: 1px solid rgba(116, 116, 116, 0.16);
   p {
-    //color: #959595;
     line-height: 1.71;
-    //font-weight: 300;
   }
   @include respond-to(md) {
     padding-top: 20px;

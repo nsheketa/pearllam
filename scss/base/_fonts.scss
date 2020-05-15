@@ -60,3 +60,11 @@
   font-style: normal;
 }
 
+@font-face {font-family: "Marion";
+  src: url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.eot"); /* IE9*/
+  src: url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.woff2") format("woff2"), /* chrome、firefox */
+  url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.woff") format("woff"), /* chrome、firefox */
+  url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("#{$fontsUrl}Marion/2334a0fd7471cefca6403dbf4d5c3cb9.svg#Marion") format("svg"); /* iOS 4.1- */
+}

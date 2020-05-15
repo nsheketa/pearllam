@@ -4,28 +4,25 @@ Generated css file from old main.sass
 
 
 section.what-is-on {
-  padding: 80px 0 200px 0;
+  padding: 80px 0 120px 0;
 }
 
 section.what-is-on .content {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
   @include respond-to(sm) {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
   }
 }
 
 section.what-is-on .content h1 {
   position: relative;
   text-align: center;
-  font-family: $baseFontFamily;
   text-transform: uppercase;
   color: $titleColor;
   font-weight: 300;
   margin-bottom: 10px;
-  font-size: 25px;
   line-height: 28px;
   @include respond-min(480){
-    font-size: 40px;
     line-height: 44px;
   }
   @include respond-to(sm){
@@ -73,7 +70,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content {
   padding: 0 15px;
   @include respond-to(md){
     opacity: .5;
-    padding: 0 35px;
+    padding: 0 25px;
   }
 }
 
@@ -90,14 +87,14 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .type {
   position: relative;
   font-weight: normal;
    color: $titleColor;
-  font-size: 17px;
   line-height: 19px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content img {
   display: block;
+  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -130,7 +127,6 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrappe
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrapper .location .text {
-  font-family: $baseFontFamily;
   font-size: 16px;
 }
 
@@ -138,6 +134,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .subtitle {
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 12px;
+  font-family: $baseFontFamily;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .location {
@@ -155,20 +152,20 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location {
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
    position: relative;
   line-height: 50px;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   &:after{
     content: '';
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: $textColor;
+    background-color: rgba($textColor, 0.2);
     left: 0;
     bottom: -17px;
   }
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content p.context {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {

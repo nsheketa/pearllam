@@ -9,30 +9,33 @@ html {
 
 h1,
 .h1 {
-  font-size: 2.19rem;  //35px;
+  font-size: 2rem;
   line-height: 1.2;
   font-weight: normal;
+  font-family: $titleFontFamily;
   @include respond-to(md) {
-    font-size: 2.63rem;   //42px;
+    font-size: 2.3rem;
   }
 }
 
 h2,
 .h2 {
-  font-size: 1.69rem;  //27px;
+  font-size: 1.69rem;
   line-height: 1.2;
   font-weight: normal;
+  font-family: $titleFontFamily;
   @include respond-to(md) {
-    font-size: 2.31rem; // 37px;
+    font-size: 2rem;
   }
 }
 
 h3,
 .h3 {
-  font-size: 1.25rem;  // 20px;
+  font-size: 1.15rem;
   font-weight: normal;
+  font-family: $titleFontFamily;
   @include respond-to(md) {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -40,8 +43,9 @@ h4,
 .h4 {
   font-size: 1rem;
   font-weight: normal;
+  font-family: $titleFontFamily;
   @include respond-to(md){
-    font-size: 1.125rem;  //18
+    font-size: 1.1rem;
   }
 }
 
@@ -52,14 +56,14 @@ h5,.h5{
 p {
   font-size: 0.875rem; // 14
   font-weight: normal;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   &:last-of-type {
     margin-bottom: 0;
   }
 
   @include respond-to(md){
     font-size: 1rem;
-    margin-bottom: 50px;
+    //margin-bottom: 40px;
   }
 }
 
@@ -74,6 +78,8 @@ p.text--sm{
 p.featured{
   font-size: 1rem;
   font-weight: normal;
+  font-family: $titleFontFamily;
+  color: $titleColor;
   @include respond-to(md){
     font-size: 1.1rem;
   }

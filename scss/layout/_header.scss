@@ -150,14 +150,13 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header.resize .right-side .top-menu li a {
-  font-size: 14px;
+  font-size: 13px;
   transition: font-size .5s;
-  //font-weight: normal;
 }
 
 .wrapper-top-header .top-header.resize .right-side .lang-select .text {
   transition: font-size .5s;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .wrapper-top-header .top-header.resize .toggle_mnu {
@@ -220,10 +219,7 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header .right-side ul.top-menu li a {
-  //font-family: "Montserrat", sans-serif;
-  //font-weight: normal;
-  //font-size: 18px;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   color: $textColor;
   opacity: 1;
@@ -240,10 +236,8 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header .right-side .lang-select .text {
-  //font-size: 18px;
-  font-size: 14px;
+   font-size: 13px;
   transition: font-size .5s;
-  //font-weight: 400;
   cursor: pointer;
 }
 
@@ -279,7 +273,7 @@ Generated css file from old main.sass
 .wrapper-top-header .top-header .right-side .lang-list li {
   padding-bottom: 7px;
   a{
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 

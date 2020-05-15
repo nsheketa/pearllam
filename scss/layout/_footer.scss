@@ -4,14 +4,11 @@
 footer {
   //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  padding: 50px 0 50px;
+  padding: 40px 0;
   background-color: #878787;
 
   @include respond-max(1660){
-    padding-top: 50px;
-  }
-  @include respond-max(992){
-    padding-top: 50px;
+    padding-top: 40px;
   }
 }
 
@@ -44,7 +41,7 @@ footer .footer-bottom-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 30px;
+  //padding-top: 20px;
   border-top: 1px solid #ababab;
 
   .item {
@@ -54,6 +51,10 @@ footer .footer-bottom-section {
     &:first-of-type {
       border-left: none;
     }
+  }
+
+  @include respond-to(sm){
+    padding-top: 20px;
   }
 }
 
@@ -67,12 +68,11 @@ footer .footer-bottom-section .logo img {
 
 footer .footer-bottom-section .footer-menu li {
   line-height: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 footer .footer-bottom-section .footer-menu li a {
-  font-size: 14px;
-  //font-weight: 300;
+  font-size: 13px;
   color: #fff;
 }
 
@@ -92,17 +92,14 @@ footer .content-wrapper {
   text-align: center;
 }
 
-footer .content-wrapper h3 {
-  //font-size: 18px;
-  font-size: 25px;
+footer .content-wrapper h4 {
   line-height: 18px;
-  //font-weight: 300;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  font-family: $baseFontFamily;
 }
 
 footer .content-wrapper p {
-  font-size: 15px;
-  //font-weight: 300;
+  font-size: 13px;
 }
 
 footer .form-wrapper {
@@ -117,22 +114,20 @@ footer .form-wrapper {
 }
 
 footer .form-wrapper.bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 670px;
   @include center;
 }
 
 footer .form-wrapper input {
   padding: 2px 0;
-  //width: 200px;
   max-width: 520px;
   width: 100%;
   border: none;
   border-bottom: 1px #ababab solid;
   color: #ababab;
-  font-size: 15px;
-  //font-weight: 300;
+  font-size: 13px;
   background-color: #878787;
   outline: none;
 }
@@ -143,17 +138,13 @@ footer .form-wrapper input::-webkit-input-placeholder, footer .form-wrapper inpu
 
 footer .form-wrapper input::placeholder {
   font-size: 15px;
-  //font-weight: 300;
-  //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
   color: #ababab;
 }
 
 footer .form-wrapper input[placeholder], footer .form-wrapper input::placeholder, footer .form-wrapper input::-webkit-input-placeholder, footer .form-wrapper input::-moz-placeholder, footer .form-wrapper input:-moz-placeholder, footer .form-wrapper input:-ms-input-placeholder {
   color: #ababab;
-  //font-family: "Montserrat", sans-serif;
   font-family: $baseFontFamily;
-  //font-weight: 300;
   font-size: 13px;
 }
 
@@ -161,17 +152,15 @@ footer .form-wrapper button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  //font-size: 15px;
   font-size: 13px;
   text-align: center;
-  //font-weight: 300;
   background: none;
   outline: none;
   cursor: pointer;
   border: 1px solid #ababab;
   color: #fff;
-  //padding: 5px 10px 4px 5px;
-  padding: 15px 20px 14px 20px;
+  //padding: 15px 20px 14px 20px;
+  padding: 10px 20px 9px;
   margin-left: 5px;
   transition: 0.4s all ease;
 
@@ -199,15 +188,13 @@ footer .copyright {
   flex-direction: row;
   font-size: 15px;
   line-height: 16px;
-  //font-weight: 300;
   color: #adadad;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 footer .copyright a.copy-link {
   display: flex;
   position: relative;
-  //color: #333;
   color: inherit;
 }
 
@@ -264,15 +251,15 @@ footer .copyright .for-mobile {
     align-items: center;
   }
   footer .footer-bottom-section .item .footer-menu li:last-of-type {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   footer .footer-bottom-section .item .footer-logo {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   footer .footer-bottom-section .item .links-list {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ababab;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
     justify-content: center;
   }
@@ -286,7 +273,7 @@ footer .copyright .for-mobile {
     width: 180px;
   }
   footer .copyright {
-    margin-top: 60px;
+    margin-top: 35px;
     justify-content: center;
   }
   /*Disable Animation on Mobile Devices*/
@@ -299,7 +286,7 @@ footer .copyright .for-mobile {
     width: 110px;
   }
   footer .footer-bottom-section form .content-wrapper h3 {
-    font-size: 16px;
+    font-family: $baseFontFamily;
   }
   footer .footer-bottom-section form .content-wrapper p {
     font-size: 13px;

@@ -13,9 +13,9 @@
 
 .fairs-rows{
   padding-top: 30px;
-  //background-color: rgba(72, 65, 68, 0.17);
   @include respond-to(lg){
     padding-left: calc(8.33% + 15px);
+    padding-top: 0;
   }
 }
 
@@ -27,9 +27,6 @@
   background-color: #fff;
   transition: 0s;
   z-index: 20;
-  //width: calc(100% + 30px) !important;
-  //padding: 0 15px 50px;
-  //left: -15px !important;
   &.is-scrolling {
     position: fixed;
     top: 77px !important;
@@ -51,7 +48,6 @@
   @include respond-to(lg) {
     display: block;
     padding: 0;
-    //padding-bottom: 0;
     background-color: transparent;
     max-width: 70px;
     &.is-scrolling {
@@ -71,7 +67,6 @@
   margin-bottom: 10px;
   @include transition-03;
   h4{
-    //font-weight: normal;
     font-size: 15px;
   }
   @include respond-to(lg) {
@@ -87,7 +82,6 @@
   @include respond-to(lg) {
     width: 100%;
     max-width: 100%;
-    //border-bottom: 1px solid $lightgrey-color;
   }
 }
 
@@ -148,14 +142,12 @@
   display: block;
   &.slick-active, &.is-active {
     a {
-      //color: $pink-color;
       @include no-underline-on-hover($lightgrey-color);
     }
   }
 
   a {
     color: $lightgrey-color;
-    //font-weight: normal;
     @include underline-hover($lightgrey-color);
     font-size: 13px;
   }
@@ -170,7 +162,7 @@
   position: relative;
   margin-bottom: 35px;
   padding-bottom: 35px;
-  border-bottom: 1px solid rgba($textColor, 0.5);
+  border-bottom: 1px solid rgba($textColor, 0.2);
   visibility: visible !important;
   @include on-event{
     .fairs-media{
@@ -181,7 +173,7 @@
   }
   @include respond-to(lg) {
     margin-bottom: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
   }
   @include respond-to(xl) {
     margin-left: 45px;
@@ -226,8 +218,7 @@
   p {
     line-height: 1.5;
     &.fairs-content__date {
-      //color: $pink-color;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   }
 
@@ -237,13 +228,7 @@
     justify-content: center;
     height: 100%;
     h2 {
-      margin-bottom: 30px;
-    }
-    p {
-      //font-size: 1rem;
-      &.fairs-content__date {
-        //margin-bottom: 20px;
-      }
+      margin-bottom: 20px;
     }
   }
 }

@@ -1,9 +1,11 @@
 /// Font families
 $Montserrat: 'Montserrat', sans-serif;
 $Benton: 'BentonSans', sans-serif;
+$Marion: 'Marion', sans-serif;
 
 /// Base font family
 $baseFontFamily: $Benton, Helvetica, Arial, sans-serif;
+$titleFontFamily: $Marion, Helvetica, Arial, sans-serif;
 
 /// Base font size (rem), line height and letter spacing
 @mixin font-size($size: 16) {
@@ -29,8 +31,8 @@ $lightpink-color: #cb97af;
 $pink-color: #db9db9;
 
 /// spacing gap
-$heading-mb: 60px;
-$section-mb: 100px;
+$heading-mb: 50px;
+$section-mb: 80px;
 $gap-left: 70px;
 
 /// Container's maximum width

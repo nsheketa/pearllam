@@ -13,7 +13,7 @@
 .news-detail-title {
   margin-bottom: 65px;
   @include respond-to(md) {
-    margin-bottom: 85px;
+    //margin-bottom: 85px;
   }
 }
 
@@ -38,16 +38,16 @@
   @include respond-to(lg) {
     padding-left: 40px;
   }
-  @include respond-to(xl) {
-    padding-left: 60px;
-  }
-  @include respond-to(xxl) {
-    padding-left: 100px;
-  }
+  //@include respond-to(xl) {
+  //  padding-left: 60px;
+  //}
+  //@include respond-to(xxl) {
+  //  padding-left: 100px;
+  //}
 }
 
 .news-detail__read-more {
-  margin-top: 70px;
+  margin-top: 50px;
   a {
     position: relative;
     @include underline-hover($lightgrey-color);
@@ -60,6 +60,6 @@
     }
   }
   @include respond-to(md) {
-    margin-top: 100px;
+    //margin-top: 100px;
   }
 }

@@ -93,6 +93,5 @@
     transition: 3.5s all ease;
   }
   @include respond-to(md) {
-    margin-bottom: 40px;
   }
 }

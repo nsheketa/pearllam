@@ -3,7 +3,7 @@
   border-bottom: 1px solid #ededed;
 
   @include respond-to(md) {
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     border-bottom: none;
   }
 }

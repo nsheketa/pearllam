@@ -1,5 +1,4 @@
 .exhibition-detail__overview{
-  //padding-top: 0;
 
   @include respond-to(md){
     padding-top: 0;
@@ -7,14 +6,8 @@
 }
 
 .ed-overview__links{
-  //margin-top: 35px;
-
+  margin-bottom: 20px;
   @include respond-to(md){
-    margin-top: 10px;
-  }
-}
-
-.ed-overview__link{
-  a{
+    margin-top: -10px;
   }
 }

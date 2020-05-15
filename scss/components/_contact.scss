@@ -8,7 +8,7 @@
 .contact-links__wrap {
   margin-bottom: 30px;
   @include respond-to(md) {
-    margin-top: -20px;
+    margin-top: -10px;
   }
   @include respond-to(lg){
     margin-bottom: 0;
@@ -19,14 +19,14 @@
   margin-bottom: 60px;
   h5 {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 36px;
     line-height: 1.7;
     text-transform: uppercase;
     &:after {
       content: '';
       display: block;
       position: absolute;
-      bottom: 20px;
+      bottom: 19px;
       left: 0;
       background-color: $textColor;
       width: 33px;
@@ -35,7 +35,7 @@
   }
   p {
     font-size: 13px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     line-height: 1.875;
     span {
       display: block;
@@ -46,13 +46,7 @@
   }
 
   @include respond-to(md) {
-    margin-bottom: 116px;
-    h5 {
-      padding-bottom: 50px;
-      &:after {
-        bottom: 25px;
-      }
-    }
+    margin-bottom: 80px;
   }
 }
 

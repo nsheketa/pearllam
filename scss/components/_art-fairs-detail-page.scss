@@ -5,11 +5,11 @@
 /*  HERO */
 
 .fairs-details__hero {
-  padding-bottom: 60px;
+  padding-bottom: $section-mb/2;
   border-bottom: 1px solid #ededed;
 
   @include respond-to(md) {
-    padding-bottom: 100px;
+    padding-bottom: $section-mb;
   }
 }
 

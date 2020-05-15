@@ -1,9 +1,9 @@
 .overview-section {
-  padding-top: 60px;
+  padding-top: $section-mb/2;
   padding-bottom: $section-mb/2;
 
   @include respond-to(md) {
-    padding-top: 80px;
+    padding-top: $section-mb;
     padding-bottom: $section-mb;
   }
 }
@@ -14,7 +14,6 @@
   p {
     font-size: 1rem;
     line-height: 1.44;
-    //font-weight: 300;
   }
 
   @include respond-to(md) {
@@ -28,9 +27,7 @@
 
 .overview-section__content {
   p {
-    //font-weight: 300;
     line-height: 1.875;
-    //margin-bottom: 40px;
   }
   @include respond-to(md) {
     padding-left: $gap-left/2;

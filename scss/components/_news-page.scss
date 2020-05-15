@@ -38,14 +38,14 @@
 }
 
 .news-list__item-media {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: hidden;
   img {
     width: 100%;
     transition: 3.5s all ease-in-out;
   }
   @include respond-to(md) {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 }
 
@@ -60,7 +60,7 @@
   }
 
   p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: none;
     &:last-of-type {
       margin-bottom: 0;
@@ -84,7 +84,7 @@
     }
     h4 {
       order: 1;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 }

@@ -38,8 +38,8 @@ body {
 }
 
 .first-section{
-  padding-top: 160px;
+  padding-top: 140px;
   @include respond-to(md){
-    padding-top: 210px;
+    padding-top: 170px;
   }
 }
