@@ -8,13 +8,13 @@
   }
 }
 
-.slick__slider-nav{
+.slick__slider-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 
-  @include respond-to(md){
+  @include respond-to(md) {
     width: auto;
   }
 }
@@ -23,21 +23,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  @include square(50px);
   z-index: 100;
   background-color: transparent;
-  opacity: .8;
+  opacity: .9;
   transition: opacity .5s;
   cursor: pointer;
-  border: 1px solid $textColor;
+  border: none;
 
   @include on-event {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   span {
-    @include square(20px);
-    border: 1px solid $textColor;
+    @include square(25px);
+    border: 2px solid $textColor;
   }
   &--prev {
     span {
@@ -58,10 +57,13 @@
     position: absolute;
     top: 30%;
     border-radius: 50%;
-    &--prev{
+    span {
+      @include square(30px);
+    }
+    &--prev {
       left: -50px;
     }
-    &--next{
+    &--next {
       right: -50px;
     }
   }

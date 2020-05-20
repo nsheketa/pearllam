@@ -63,23 +63,27 @@
 
 .exhibitions-section__item-content {
   .date {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
   .location {
     font-size: 14px;
   }
   h3 {
-    padding-top: 15px;
-    border-top: 1px solid #ededed;
-    margin-bottom: 15px;
+    padding-top: 8px;
+    //border-top: 1px solid #ededed;
+    margin-bottom: 16px;
+    font-family: $titleFontFamily;
+    line-height: 1.3;
+    font-size: 1.3rem;
   }
   @include respond-to(md) {
     .date {
-      margin-bottom: 20px;
+      margin-bottom: 8px;
     }
     h3 {
-      padding-top: 20px;
-      margin-bottom: 25px;
+      padding-top: 8px;
+      margin-bottom: 16px;
+      font-size: 1.55rem;
     }
   }
 }

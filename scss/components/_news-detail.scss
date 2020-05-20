@@ -12,6 +12,9 @@
 
 .news-detail-title {
   margin-bottom: 65px;
+  h2{
+    font-family: $titleFontFamily;
+  }
   @include respond-to(md) {
     //margin-bottom: 85px;
   }

@@ -31,7 +31,7 @@
   li {
     font-size: 14px;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -46,6 +46,12 @@
     text-transform: uppercase;
   }
 
+  span {
+    &.is-hidden {
+      display: none;
+    }
+  }
+
   @include respond-to(lg) {
     max-width: 200px;
     padding: 20px 15px 20px 0;
@@ -55,6 +61,15 @@
     li {
       font-size: 13px;
       margin-bottom: 10px;
+    }
+  }
+}
+
+.exhibitions-nav {
+  li {
+    ul {
+      display: none;
+      margin-top: 10px;
     }
   }
 }
@@ -202,16 +217,24 @@
 .exhibition-list__item-title {
 
   h3 {
+    font-family: $titleFontFamily;
     font-size: 1.25rem; //20
     line-height: 1;
+    margin-bottom: 5px;
+  }
+  h4 {
+    font-family: $titleFontFamily;
+    line-height: 1.2;
     margin-bottom: 15px;
   }
-
   @include respond-to(md) {
     padding-right: 15px;
     h3 {
       color: #fff;
       font-size: 1.875rem; //30
+    }
+    h4 {
+      color: #fff;
       margin-bottom: 0;
     }
   }
@@ -221,9 +244,7 @@
   p {
     line-height: 1.3;
     &.duration {
-      //color: $pink-color;
-      font-size: 0.81rem; //13
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       span {
         text-transform: uppercase;
       }
@@ -242,8 +263,6 @@
 
       &.duration {
         color: #fff;
-        font-size: 0.93rem; //15
-        margin-bottom: 10px;
       }
     }
   }

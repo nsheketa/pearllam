@@ -16,20 +16,20 @@
     position: relative;
   }
   @include respond-to(md){
-    p {
+    p:not(.date__item) {
       font-size: 0.94rem; //15
     }
   }
 }
 
 .details-page__hero-date{
-  font-size: 0.81rem; //13
-  color: $lightgrey-color;
+  //font-size: 0.81rem; //13
+  //color: $lightgrey-color;
   margin-bottom: 15px;
   padding-left: 0;
 
   @include respond-to(md) {
-    font-size: 0.94rem; //15
+    //font-size: 0.94rem; //15
     margin-bottom: 30px;
   }
 }

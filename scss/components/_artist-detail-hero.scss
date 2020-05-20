@@ -69,10 +69,14 @@
 
 .artist-detail__title{
   h1{
+    font-family: $titleFontFamily;
+  }
+  h2{
+    font-family: $titleFontFamily;
     margin-bottom: 30px;
   }
   @include respond-to(md){
-    h1{
+    h2{
       margin-bottom: 0;
     }
   }

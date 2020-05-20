@@ -22,7 +22,6 @@
 
 .fairs-years {
   position: relative;
-  text-align: center;
   padding-bottom: 50px;
   background-color: #fff;
   transition: 0s;
@@ -205,11 +204,11 @@
 
 .fairs-content {
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     text-transform: uppercase;
     line-height: 1.2;
     @include transition-04;
-
+    font-family: $titleFontFamily;
     a{
       position: relative;
       @include underline-hover($lightgrey-color);
@@ -218,7 +217,7 @@
   p {
     line-height: 1.5;
     &.fairs-content__date {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
     }
   }
 
@@ -228,7 +227,7 @@
     justify-content: center;
     height: 100%;
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
   }
 }

@@ -31,6 +31,7 @@
     //font-size: 1.25rem; //20
     font-weight: 300;
     line-height: 1.2;
+    font-family: $titleFontFamily;
   }
 
   @include respond-to(md) {

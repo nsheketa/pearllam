@@ -27,18 +27,11 @@
   max-width: 120px;
   p {
     text-transform: uppercase;
-    font-size: 0.81rem; //13
-    color: $lightgrey-color;
   }
   @include respond-to(sm) {
     width: 190px;
     max-width: 190px;
     flex: 1 0 190px;
-  }
-  @include respond-to(md) {
-    p {
-      font-size: 0.875rem; //14
-    }
   }
 }
 
@@ -46,6 +39,7 @@
   h4 {
     text-transform: uppercase;
     line-height: 1.33;
+    font-family: $titleFontFamily;
 
     a {
       position: relative;

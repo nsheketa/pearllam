@@ -197,7 +197,7 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header .right-side ul.top-menu li {
-  padding: 0 20px;
+  padding: 0 10px;
 
   &.is-active{
     a{
@@ -228,7 +228,7 @@ Generated css file from old main.sass
 }
 
 .wrapper-top-header .top-header .right-side .lang-select {
-  margin-left: 65px;
+  margin-left: 35px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -373,9 +373,9 @@ Generated css file from old main.sass
 @media only screen and (max-width: 1660px) {
 
   .wrapper-top-header .top-header .right-side ul.top-menu li {
-    padding: 0 13px;
+    padding: 0 9px;
   }
   .wrapper-top-header .top-header .right-side .lang-select {
-    margin-left: 40px;
+    margin-left: 30px;
   }
 }

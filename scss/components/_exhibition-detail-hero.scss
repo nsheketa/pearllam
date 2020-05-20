@@ -13,6 +13,9 @@
 }
 
 .ed-hero__content{
+  h1{
+    font-family: $titleFontFamily;
+  }
   p, h1{
     margin-bottom: 15px;
   }
@@ -22,7 +25,7 @@
     }
   }
   @include respond-to(xl){
-    padding-right: 40px;
+    padding-right: 38px;
     padding-top: 40px;
   }
   @include respond-to(xxl){

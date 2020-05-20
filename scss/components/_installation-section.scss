@@ -8,6 +8,18 @@
 
 .installation__carousel-wrap{
   position: relative;
+  .installation__nav{
+    padding-top: 40px;
+    @include respond-to(lg){
+      padding-top: 0;
+
+      .slick__slider-btn{
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
 }
 
 .installation__carousel{

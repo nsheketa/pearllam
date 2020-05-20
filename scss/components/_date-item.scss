@@ -1,0 +1,7 @@
+.date__item{
+  font-size: 0.81rem; //13
+  color: $lightgrey-color;
+  @include respond-to(md){
+    font-size: 0.875rem;
+  }
+}

@@ -12,7 +12,6 @@ h1,
   font-size: 2rem;
   line-height: 1.2;
   font-weight: normal;
-  font-family: $titleFontFamily;
   @include respond-to(md) {
     font-size: 2.3rem;
   }
@@ -23,7 +22,6 @@ h2,
   font-size: 1.69rem;
   line-height: 1.2;
   font-weight: normal;
-  font-family: $titleFontFamily;
   @include respond-to(md) {
     font-size: 2rem;
   }
@@ -33,7 +31,6 @@ h3,
 .h3 {
   font-size: 1.15rem;
   font-weight: normal;
-  font-family: $titleFontFamily;
   @include respond-to(md) {
     font-size: 1.15rem;
   }
@@ -43,7 +40,6 @@ h4,
 .h4 {
   font-size: 1rem;
   font-weight: normal;
-  font-family: $titleFontFamily;
   @include respond-to(md){
     font-size: 1.1rem;
   }
