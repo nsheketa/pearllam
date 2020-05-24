@@ -2,7 +2,8 @@
   margin-bottom: $heading-mb/2;
   h2, h3 {
     line-height: 1.44;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    text-transform: capitalize;
     color: $titleColor;
   }
 

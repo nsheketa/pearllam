@@ -104,7 +104,6 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .type {
   color: $titleColor;
   line-height: 19px;
   margin-bottom: 25px;
-  text-transform: uppercase;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content img {
@@ -146,7 +145,6 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location-wrappe
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .subtitle {
-  //font-size: 16px;
   line-height: 16px;
   margin-bottom: 16px;
 }
@@ -156,21 +154,28 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .location {
   color: $textColor;
   margin-bottom: 16px;
   //text-transform: uppercase;
+  
+  &.location--exhibition{
+    text-transform: uppercase;
+  }
 
   @include respond-to(md) {
     margin-bottom: 24px;
   }
 }
 
-section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
-  position: relative;
-  //line-height: 50px;
-  //margin-bottom: 40px;
+section.what-is-on .what-is-on-gallery .item  .title-post__wrap{
   margin-bottom: 16px;
   font-family: $titleFontFamily;
+  h4{
+    font-style: italic;
+  }
+}
+
+section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
+  position: relative;
   font-size: 1.55rem;
   line-height: 1.2;
-  font-style: italic;
   //&:after {
   //  content: '';
   //  position: absolute;

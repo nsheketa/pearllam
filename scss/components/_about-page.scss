@@ -114,6 +114,8 @@
 
   @include respond-to(md) {
     display: flex;
+    max-width: 600px;
+    @include center;
     flex-direction: column;
     justify-content: center;
     height: 100%;

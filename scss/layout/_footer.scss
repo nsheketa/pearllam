@@ -2,7 +2,8 @@
   Generated css file from old main.sass
 */
 footer {
-  //font-family: "Montserrat", sans-serif;
+  position: relative;
+  z-index: 25;
   font-family: $baseFontFamily;
   padding: 40px 0;
   background-color: #878787;
@@ -122,7 +123,7 @@ footer .form-wrapper.bottom {
 
 footer .form-wrapper input {
   padding: 2px 0;
-  max-width: 520px;
+  max-width: 320px;
   width: 100%;
   border: none;
   border-bottom: 1px #ababab solid;

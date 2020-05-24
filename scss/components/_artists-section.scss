@@ -7,7 +7,7 @@
 }
 
 .artists-list {
-  margin: 0 -15px;
+  margin: 0 -10px;
   display: flex;
   flex-wrap: wrap;
   &.is-visible{
@@ -22,7 +22,7 @@
 }
 
 .artists-list__item {
-  padding: 0 15px;
+  padding: 0 10px;
   margin-bottom: 20px;
   width: 50%;
   max-width: 50%;
@@ -47,7 +47,6 @@
   p {
     position: relative;
     display: inline-block;
-    text-transform: uppercase;
     &:before {
       content: '';
       display: block;

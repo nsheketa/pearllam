@@ -22,6 +22,7 @@
 
 .fairs-years {
   position: relative;
+  text-align: center;
   padding-bottom: 50px;
   background-color: #fff;
   transition: 0s;
@@ -46,6 +47,7 @@
 
   @include respond-to(lg) {
     display: block;
+    text-align: left;
     padding: 0;
     background-color: transparent;
     max-width: 70px;
