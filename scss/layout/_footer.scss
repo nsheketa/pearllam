@@ -73,7 +73,7 @@ footer .footer-bottom-section .footer-menu li {
 }
 
 footer .footer-bottom-section .footer-menu li a {
-  font-size: 13px;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -100,7 +100,7 @@ footer .content-wrapper h4 {
 }
 
 footer .content-wrapper p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 footer .form-wrapper {
@@ -127,14 +127,14 @@ footer .form-wrapper input {
   width: 100%;
   border: none;
   border-bottom: 1px #ababab solid;
-  color: #ababab;
-  font-size: 13px;
+  color: $titleColor;
+  font-size: 14px;
   background-color: #878787;
   outline: none;
 }
 
 footer .form-wrapper input::-webkit-input-placeholder, footer .form-wrapper input::-moz-placeholder, footer .form-wrapper input:-moz-placeholder, footer .form-wrapper input:-ms-input-placeholder {
-  color: #ababab;
+  color: $titleColor;
 }
 
 footer .form-wrapper input::placeholder {
@@ -144,7 +144,7 @@ footer .form-wrapper input::placeholder {
 }
 
 footer .form-wrapper input[placeholder], footer .form-wrapper input::placeholder, footer .form-wrapper input::-webkit-input-placeholder, footer .form-wrapper input::-moz-placeholder, footer .form-wrapper input:-moz-placeholder, footer .form-wrapper input:-ms-input-placeholder {
-  color: #ababab;
+  color: $titleColor;
   font-family: $baseFontFamily;
   font-size: 13px;
 }
@@ -187,9 +187,9 @@ footer .form-wrapper button .icon svg path {
 footer .copyright {
   display: flex;
   flex-direction: row;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 16px;
-  color: #adadad;
+  color: $titleColor;
   margin-top: 20px;
 }
 

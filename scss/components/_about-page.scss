@@ -88,13 +88,14 @@
       margin-bottom: 125px;
       &.about-row--text-right {
         .about-content__wrap {
-          padding-left: 74px;
+          //padding-left: 74px;
+          padding-left: 35px;
         }
       }
     }
     &--text-right {
       .about-content__wrap {
-        padding-left: 85px;
+        //padding-left: 85px;
       }
     }
   }

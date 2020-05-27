@@ -1,5 +1,7 @@
 .details-page__section-title {
-  margin-bottom: $heading-mb/2;
+  //margin-bottom: $heading-mb/2;
+  margin-bottom: 35px;
+  margin-bottom: 35px;
   h2, h3 {
     line-height: 1.44;
     //text-transform: uppercase;
@@ -7,7 +9,7 @@
     color: $titleColor;
   }
 
-  @include respond-to(md) {
+  @include respond-to(xl) {
     margin-bottom: $heading-mb;
   }
 }
