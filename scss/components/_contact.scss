@@ -8,7 +8,7 @@
 .contact-links__wrap {
   margin-bottom: 30px;
   @include respond-to(md) {
-    margin-top: -10px;
+    //margin-top: -10px;
   }
   @include respond-to(lg){
     margin-bottom: 0;
@@ -34,7 +34,7 @@
     }
   }
   p {
-    font-size: 13px;
+    //font-size: 13px;
     margin-bottom: 10px;
     line-height: 1.875;
     span {
@@ -42,7 +42,7 @@
     }
   }
   a {
-    font-size: 13px;
+    //font-size: 13px;
   }
 
   @include respond-to(md) {

@@ -15,6 +15,9 @@
 .ed-hero__content{
   h1{
     font-family: $titleFontFamily;
+    span{
+      display: block;
+    }
   }
   p, h1{
     margin-bottom: 15px;
@@ -72,12 +75,8 @@
 }
 
 .ed-hero__carousel-nav{
-  padding-top: 40px;
-  max-width: 230px;
-  @include center;
 
   .slick__slider-btn {
-    width: 90px;
     color: #959595;
     border-color: #959595;
     span{
@@ -86,13 +85,11 @@
   }
 
   @include respond-to(sm){
-    max-width: none;
-    padding: 40px 0px 0;
+    //padding: 40px 0px 0;
 
   }
   @include respond-to(lg){
     .slick__slider-btn{
-      width: 40px;
       &--prev{
         left: -25px;
       }
@@ -104,10 +101,10 @@
   @include respond-to(xxl){
     .slick__slider-btn{
       &--prev{
-        left: -50px;
+        left: -35px;
       }
       &--next{
-        right: -50px;
+        right: -35px;
       }
     }
   }

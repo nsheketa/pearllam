@@ -39,9 +39,11 @@
   }
   &--featured {
     margin-bottom: 135px;
-    p {
+    p, h4 {
       //font-size: 1rem;
       line-height: 1.92;
+      font-family: $titleFontFamily;
+      font-style: italic;
     }
   }
   &--text-left {
@@ -57,7 +59,7 @@
     margin-bottom: 100px;
     &--featured {
       margin-bottom: 80px;
-      p {
+      p, h4 {
         //font-size: 1.25rem;
       }
     }
@@ -76,7 +78,7 @@
 
   @include respond-to(xl) {
     &--featured {
-      p {
+      p, h3 {
         //font-size: 1.56rem; //25
       }
     }

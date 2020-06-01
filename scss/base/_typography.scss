@@ -9,7 +9,7 @@ html {
 
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.2;
   font-weight: normal;
   @include respond-to(md) {
@@ -19,7 +19,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 1.69rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   font-weight: normal;
   @include respond-to(md) {
@@ -32,7 +32,7 @@ h3,
   font-size: 1.15rem;
   font-weight: normal;
   @include respond-to(md) {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -47,6 +47,7 @@ h4,
 
 h5,.h5{
   font-size: 0.875rem;
+  font-weight: normal;
 }
 
 p {
@@ -63,11 +64,12 @@ p {
   }
 }
 
-p.text--sm{
+//same font size as date__item
+.text--sm{
   font-size: 0.81rem;
 
   @include respond-to(md){
-    font-size: 0.94rem;
+    font-size: 0.875rem;
   }
 }
 

@@ -54,10 +54,12 @@
   flex-direction: column;
   h4 {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
     line-height: 1.3;
     order: 0;
     font-family: $titleFontFamily;
+    border-bottom: 1px solid rgba($textColor, 0.5);
   }
 
   p {
@@ -67,9 +69,12 @@
       margin-bottom: 0;
     }
     &.news-list__item-date {
-      text-transform: uppercase;
+      //text-transform: uppercase;
       order: 1;
       display: block;
+      span{
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -79,13 +84,14 @@
       order: 2;
       color: $lightgrey-color;
       &.news-list__item-date {
-        order: 0;
+        order: 2;
         //color: $textColor;
       }
     }
     h4 {
       order: 1;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
     }
   }
 }

@@ -13,9 +13,16 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 170px;
+  @include center;
+  padding-top: 40px;
 
-  @include respond-to(md) {
+  @include respond-to(sm){
     width: auto;
+    max-width: 100%;
+  }
+  @include respond-to(lg){
+    padding-top: 0;
   }
 }
 
@@ -23,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include square(50px);
+  @include square(40px);
   z-index: 100;
   background-color: transparent;
   opacity: .9;
@@ -35,7 +42,7 @@
     opacity: 0.6;
   }
   span {
-    @include square(25px);
+    @include square(19px);
     border: 2px solid $textColor;
   }
   &--prev {

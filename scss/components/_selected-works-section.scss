@@ -14,12 +14,9 @@ $fairs-detail-grey: #313131;
 }
 
 .selected-works__nav {
-  padding-top: 40px;
-  max-width: 230px;
-  @include center;
+  //padding-top: 40px;
 
   .slick__slider-btn {
-    width: 90px;
     color: #959595;
     border-color: #959595;
     span {
@@ -28,15 +25,13 @@ $fairs-detail-grey: #313131;
   }
 
   @include respond-to(sm) {
-    max-width: none;
-    padding: 40px 35px 0;
+    //max-width: none;
+    //padding: 40px 35px 0;
+    padding: 40px 0px 0;
   }
   @include respond-to(lg) {
-    padding-top: 0;
-    max-width: none;
 
     .slick__slider-btn {
-      width: 40px;
 
       &--prev {
         left: -50px;
@@ -98,23 +93,36 @@ $fairs-detail-grey: #313131;
   }
 }
 
+//.selected-works__item-desc {
+//  position: absolute;
+//  top: 0%;
+//  transform: rotate(-90deg) translateX(-100%) translate(20px, -5px);
+//  transform-origin: left bottom;
+//  p {
+//    color: $fairs-detail-grey;
+//    font-size: 13px;
+//    letter-spacing: 0.1em;
+//    white-space: nowrap;
+//  }
+//
+//  @include respond-to(md) {
+//    transform: rotate(-90deg) translateX(-100%) translate(20px, -10px);
+//  }
+//  @include respond-to(xl) {
+//    transform: rotate(-90deg) translateX(-100%) translate(20px, -20px);
+//  }
+//}
+
 .selected-works__item-desc {
-  position: absolute;
-  top: 0%;
-  transform: rotate(-90deg) translateX(-100%) translate(20px, -5px);
-  transform-origin: left bottom;
   p {
-    color: $fairs-detail-grey;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    white-space: nowrap;
+
   }
 
   @include respond-to(md) {
-    transform: rotate(-90deg) translateX(-100%) translate(20px, -10px);
+
   }
   @include respond-to(xl) {
-    transform: rotate(-90deg) translateX(-100%) translate(20px, -20px);
+
   }
 }
 

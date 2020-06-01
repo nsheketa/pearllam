@@ -8,6 +8,7 @@ section.what-is-on {
 
 section.what-is-on .content {
   margin-bottom: 45px;
+  padding: 0 15px;
   @include respond-to(sm) {
     margin-bottom: 65px;
   }
@@ -29,7 +30,7 @@ section.what-is-on .content h1 {
   }
 }
 
-section.what-is-on .content h3 {
+section.what-is-on .content h3, section.what-is-on .content h4, section.what-is-on .content h5 {
   max-width: 500px;
   @include center;
   text-align: center;
@@ -104,6 +105,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content .type {
   color: $titleColor;
   line-height: 19px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content img {
@@ -174,7 +176,7 @@ section.what-is-on .what-is-on-gallery .item  .title-post__wrap{
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content .title-post {
   position: relative;
-  font-size: 1.55rem;
+  //font-size: 1.55rem;
   line-height: 1.2;
   //&:after {
   //  content: '';
@@ -201,7 +203,7 @@ section.what-is-on .what-is-on-gallery .item .item-wrap-content p.context {
 
 section.what-is-on .what-is-on-gallery .item .item-wrap-content a.link {
   position: relative;
-  font-size: 14px;
+  //font-size: 14px;
   text-transform: uppercase;
   border-bottom: 1px solid $textColor;
   padding-bottom: 1px;

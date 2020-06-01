@@ -67,8 +67,8 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   @include transition-03;
-  h4{
-    font-size: 15px;
+  h4,h5{
+    //font-size: 15px;
   }
   @include respond-to(lg) {
     margin-bottom: 10px;

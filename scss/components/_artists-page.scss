@@ -22,7 +22,7 @@
   a {
     position: relative;
     text-transform: uppercase;
-    font-size: 0.91rem;
+    //font-size: 0.81rem;
     @include underline-hover($textColor);
   }
 

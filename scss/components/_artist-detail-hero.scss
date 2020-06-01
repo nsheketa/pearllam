@@ -28,17 +28,8 @@
 }
 
 .ad-hero__carousel-nav{
-  padding-top: 40px;
-  max-width: 230px;
-  @include center;
-  .slick__slider-btn{
-    width: 90px;
-  }
   &--desk{
     display: none;
-  }
-  @include respond-to(sm){
-    max-width: none;
   }
   @include respond-to(lg){
     padding-top: 0;
@@ -49,7 +40,6 @@
       display: none;
     }
     .slick__slider-btn{
-      width: 40px;
       top: 40%;
     }
   }
@@ -85,7 +75,7 @@
 .ad-hero__slick-paging{
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   li{
     display: none;
     &.slick-active{

@@ -1,0 +1,14 @@
+.video-section{
+  padding-bottom: $section-mb/2;
+  @include respond-to(md) {
+    padding-bottom: $section-mb;
+  }
+}
+
+.video-section__item{
+  max-width: 900px;
+  @include center;
+  video{
+    width: 100%;
+  }
+}

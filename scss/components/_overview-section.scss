@@ -8,18 +8,17 @@
   }
 }
 
-
 .overview-section__featured-content {
   margin-bottom: 50px;
-  p {
-    font-size: 1rem;
+  p, h3 {
+    //font-size: 1rem;
     line-height: 1.44;
   }
 
   @include respond-to(md) {
     margin-bottom: 0;
-    p {
-      font-size: 1.25rem;
+    p, h3 {
+      //font-size: 1.25rem;
     }
   }
 
