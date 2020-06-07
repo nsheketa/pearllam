@@ -3,9 +3,10 @@
   margin-bottom: 35px;
   h2, h3 {
     line-height: 1.44;
-    text-transform: uppercase;
-    //text-transform: capitalize;
+    //text-transform: uppercase;
+    text-transform: capitalize;
     //color: $titleColor;
+    font-family: $titleFontFamily;
   }
 
   @include respond-to(xl) {

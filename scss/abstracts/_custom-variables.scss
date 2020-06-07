@@ -8,12 +8,12 @@ $baseFontFamily: $Benton, Helvetica, Arial, sans-serif;
 $titleFontFamily: $Marion, Helvetica, Arial, sans-serif;
 
 /// Base font size (rem), line height and letter spacing
-@mixin font-size($size: 16) {
+@mixin font-size($size: 14) {
   font-size: $size * 1px;
   font-size: ($size / $baseFontSize) * 1rem;
 }
 
-$baseFontSize: 16;
+$baseFontSize: 14;
 $baseFontSizePixel: $baseFontSize * 1px;
 
 $baseLineHeight: 1.6;

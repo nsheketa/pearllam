@@ -3,7 +3,11 @@ Generated css file from old main.sass
 */
 
 section.what-is-on {
-  padding: 80px 0 120px 0;
+  //padding: 80px 0 120px 0;
+  padding: 110px 0 120px 0;
+  @include respond-to(sm){
+    padding: 80px 0 120px 0;
+  }
 }
 
 section.what-is-on .content {
@@ -17,9 +21,9 @@ section.what-is-on .content {
 section.what-is-on .content h1 {
   position: relative;
   text-align: center;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   color: $titleColor;
-  font-weight: 300;
+  font-family: $titleFontFamily;
   margin-bottom: 10px;
   line-height: 28px;
   @include respond-min(480) {
@@ -54,13 +58,54 @@ section.what-is-on .what-is-on-gallery {
   margin: 0 auto;
 }
 
+.what-is-on-gallery{
+  &--desk{
+    display: none;
+    .item .bottom-content {
+      opacity: 0;
+      transition: opacity 0.7s ease-in-out;
+    }
+  }
+  &--mob{
+    .item {
+      margin-bottom: 40px;
+      .bottom-content {
+        opacity: 1;
+      }
+    }
+  }
+  @include respond-to(sm){
+    &--mob{
+      display: none;
+    }
+    &--desk{
+      display: block;
+    }
+  }
+}
+
+.what-is-on__nav{
+  display: none;
+
+  @include respond-to(sm){
+    display: flex;
+  }
+  @include respond-to(md){
+    .slick__slider-btn{
+      position: absolute;
+      top: 30%;
+      border-radius: 50%;
+    }
+  }
+}
+
 section.what-is-on .what-is-on-gallery .item:focus {
   outline: none;
 }
 
-section.what-is-on .what-is-on-gallery .item .bottom-content {
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out;
+.what-is-on-gallery .item .bottom-content {
+  //opacity: 0;
+  //transition: opacity 0.7s ease-in-out;
 }
 
 section.what-is-on .what-is-on-gallery .item.slick-active {
@@ -650,7 +695,7 @@ section.what-is-on .what-is-on-gallery-carousel .owl-nav .owl-next {
 @media only screen and (max-width: 480px) {
 
   section.what-is-on {
-    padding-top: 50px;
+    //padding-top: 50px;
     padding-bottom: 100px;
   }
   section.what-is-on .content h1::after {

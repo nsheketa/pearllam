@@ -113,18 +113,6 @@ $fairs-detail-grey: #313131;
 //  }
 //}
 
-.selected-works__item-desc {
-  p {
-
-  }
-
-  @include respond-to(md) {
-
-  }
-  @include respond-to(xl) {
-
-  }
-}
 
 .selected-works__item-title {
   padding-bottom: 15px;
@@ -137,6 +125,9 @@ $fairs-detail-grey: #313131;
   }
   @include respond-to(md) {
     padding-bottom: 20px;
+    h4{
+      //font-size: 1.2rem;
+    }
   }
 }
 
@@ -148,6 +139,9 @@ $fairs-detail-grey: #313131;
   }
   @include respond-to(md) {
     padding-top: 20px;
+    p{
+      //font-size: 1.1rem;
+    }
   }
 }
 

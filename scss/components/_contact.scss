@@ -17,11 +17,13 @@
 
 .contact-details__item {
   margin-bottom: 60px;
-  h5 {
+  h5, h2 {
     position: relative;
     padding-bottom: 36px;
     line-height: 1.7;
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    font-family: $titleFontFamily;
+    text-transform: capitalize;
     &:after {
       content: '';
       display: block;

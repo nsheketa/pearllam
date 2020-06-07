@@ -15,6 +15,10 @@
     line-height: 1.44;
   }
 
+  h3{
+    font-family: $titleFontFamily;
+    font-style: italic;
+  }
   @include respond-to(md) {
     margin-bottom: 0;
     p, h3 {

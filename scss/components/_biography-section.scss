@@ -63,6 +63,10 @@
 }
 
 .biography-content {
+  .title-with-line{
+    font-family: $titleFontFamily;
+    text-transform: none;
+  }
   p {
     line-height: 1.875;
   }

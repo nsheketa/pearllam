@@ -97,8 +97,10 @@ button {
 section.main-carousel-wrapper {
   //padding-top: 110px;
   padding-top: 80px;
+  display: none;
   @include respond-to(sm){
     height: 100vh;
+    display: block;
   }
   @include respond-to(md){
     padding-top: 110px;

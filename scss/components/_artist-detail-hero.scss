@@ -10,6 +10,10 @@
 
 .ad-hero__carousel-wrap{
   position: relative;
+  display: none;
+  @include respond-to(sm){
+    display: block;
+  }
 }
 
 
@@ -22,14 +26,24 @@
   img{
     width: 100%;
   }
+  figcaption{
+    text-align: right;
+    margin-top: 10px;
+  }
   @include respond-to(md){
     margin-bottom: 30px;
   }
 }
 
 .ad-hero__carousel-nav{
+  display: none;
   &--desk{
     display: none;
+  }
+  @include respond-to(sm){
+    &--mob{
+      display: flex;
+    }
   }
   @include respond-to(lg){
     padding-top: 0;

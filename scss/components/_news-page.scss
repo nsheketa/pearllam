@@ -52,8 +52,7 @@
 .news-list__item-content {
   display: flex;
   flex-direction: column;
-  h4 {
-    text-transform: uppercase;
+  h4, .h4, h2 {
     padding-bottom: 8px;
     margin-bottom: 8px;
     line-height: 1.3;
